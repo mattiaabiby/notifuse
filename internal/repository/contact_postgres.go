@@ -29,8 +29,14 @@ var contactColumns = []string{
 	"first_name", "last_name", "full_name", "phone", "address_line_1", "address_line_2",
 	"country", "postcode", "state", "job_title",
 	"custom_string_1", "custom_string_2", "custom_string_3", "custom_string_4", "custom_string_5",
+	"custom_string_6", "custom_string_7", "custom_string_8", "custom_string_9", "custom_string_10",
+	"custom_string_11", "custom_string_12", "custom_string_13", "custom_string_14", "custom_string_15",
 	"custom_number_1", "custom_number_2", "custom_number_3", "custom_number_4", "custom_number_5",
+	"custom_number_6", "custom_number_7", "custom_number_8", "custom_number_9", "custom_number_10",
+	"custom_number_11", "custom_number_12", "custom_number_13", "custom_number_14", "custom_number_15",
 	"custom_datetime_1", "custom_datetime_2", "custom_datetime_3", "custom_datetime_4", "custom_datetime_5",
+	"custom_datetime_6", "custom_datetime_7", "custom_datetime_8", "custom_datetime_9", "custom_datetime_10",
+	"custom_datetime_11", "custom_datetime_12", "custom_datetime_13", "custom_datetime_14", "custom_datetime_15",
 	"custom_json_1", "custom_json_2", "custom_json_3", "custom_json_4", "custom_json_5",
 	"created_at", "updated_at", "db_created_at", "db_updated_at",
 }
@@ -538,8 +544,14 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 		var firstNameSQL, lastNameSQL, fullNameSQL, phoneSQL, addressLine1SQL, addressLine2SQL sql.NullString
 		var countrySQL, postcodeSQL, stateSQL, jobTitleSQL sql.NullString
 		var customString1SQL, customString2SQL, customString3SQL, customString4SQL, customString5SQL sql.NullString
+		var customString6SQL, customString7SQL, customString8SQL, customString9SQL, customString10SQL sql.NullString
+		var customString11SQL, customString12SQL, customString13SQL, customString14SQL, customString15SQL sql.NullString
 		var customNumber1SQL, customNumber2SQL, customNumber3SQL, customNumber4SQL, customNumber5SQL sql.NullFloat64
+		var customNumber6SQL, customNumber7SQL, customNumber8SQL, customNumber9SQL, customNumber10SQL sql.NullFloat64
+		var customNumber11SQL, customNumber12SQL, customNumber13SQL, customNumber14SQL, customNumber15SQL sql.NullFloat64
 		var customDatetime1SQL, customDatetime2SQL, customDatetime3SQL, customDatetime4SQL, customDatetime5SQL sql.NullTime
+		var customDatetime6SQL, customDatetime7SQL, customDatetime8SQL, customDatetime9SQL, customDatetime10SQL sql.NullTime
+		var customDatetime11SQL, customDatetime12SQL, customDatetime13SQL, customDatetime14SQL, customDatetime15SQL sql.NullTime
 		var customJSON1SQL, customJSON2SQL, customJSON3SQL, customJSON4SQL, customJSON5SQL sql.NullString
 
 		// String fields
@@ -671,6 +683,76 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 				customString5SQL = sql.NullString{Valid: false}
 			}
 		}
+		if contact.CustomString6 != nil {
+			if !contact.CustomString6.IsNull {
+				customString6SQL = sql.NullString{String: contact.CustomString6.String, Valid: true}
+			} else {
+				customString6SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString7 != nil {
+			if !contact.CustomString7.IsNull {
+				customString7SQL = sql.NullString{String: contact.CustomString7.String, Valid: true}
+			} else {
+				customString7SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString8 != nil {
+			if !contact.CustomString8.IsNull {
+				customString8SQL = sql.NullString{String: contact.CustomString8.String, Valid: true}
+			} else {
+				customString8SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString9 != nil {
+			if !contact.CustomString9.IsNull {
+				customString9SQL = sql.NullString{String: contact.CustomString9.String, Valid: true}
+			} else {
+				customString9SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString10 != nil {
+			if !contact.CustomString10.IsNull {
+				customString10SQL = sql.NullString{String: contact.CustomString10.String, Valid: true}
+			} else {
+				customString10SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString11 != nil {
+			if !contact.CustomString11.IsNull {
+				customString11SQL = sql.NullString{String: contact.CustomString11.String, Valid: true}
+			} else {
+				customString11SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString12 != nil {
+			if !contact.CustomString12.IsNull {
+				customString12SQL = sql.NullString{String: contact.CustomString12.String, Valid: true}
+			} else {
+				customString12SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString13 != nil {
+			if !contact.CustomString13.IsNull {
+				customString13SQL = sql.NullString{String: contact.CustomString13.String, Valid: true}
+			} else {
+				customString13SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString14 != nil {
+			if !contact.CustomString14.IsNull {
+				customString14SQL = sql.NullString{String: contact.CustomString14.String, Valid: true}
+			} else {
+				customString14SQL = sql.NullString{Valid: false}
+			}
+		}
+		if contact.CustomString15 != nil {
+			if !contact.CustomString15.IsNull {
+				customString15SQL = sql.NullString{String: contact.CustomString15.String, Valid: true}
+			} else {
+				customString15SQL = sql.NullString{Valid: false}
+			}
+		}
 
 		// Custom number fields
 		if contact.CustomNumber1 != nil {
@@ -708,6 +790,76 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 				customNumber5SQL = sql.NullFloat64{Valid: false}
 			}
 		}
+		if contact.CustomNumber6 != nil {
+			if !contact.CustomNumber6.IsNull {
+				customNumber6SQL = sql.NullFloat64{Float64: contact.CustomNumber6.Float64, Valid: true}
+			} else {
+				customNumber6SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber7 != nil {
+			if !contact.CustomNumber7.IsNull {
+				customNumber7SQL = sql.NullFloat64{Float64: contact.CustomNumber7.Float64, Valid: true}
+			} else {
+				customNumber7SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber8 != nil {
+			if !contact.CustomNumber8.IsNull {
+				customNumber8SQL = sql.NullFloat64{Float64: contact.CustomNumber8.Float64, Valid: true}
+			} else {
+				customNumber8SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber9 != nil {
+			if !contact.CustomNumber9.IsNull {
+				customNumber9SQL = sql.NullFloat64{Float64: contact.CustomNumber9.Float64, Valid: true}
+			} else {
+				customNumber9SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber10 != nil {
+			if !contact.CustomNumber10.IsNull {
+				customNumber10SQL = sql.NullFloat64{Float64: contact.CustomNumber10.Float64, Valid: true}
+			} else {
+				customNumber10SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber11 != nil {
+			if !contact.CustomNumber11.IsNull {
+				customNumber11SQL = sql.NullFloat64{Float64: contact.CustomNumber11.Float64, Valid: true}
+			} else {
+				customNumber11SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber12 != nil {
+			if !contact.CustomNumber12.IsNull {
+				customNumber12SQL = sql.NullFloat64{Float64: contact.CustomNumber12.Float64, Valid: true}
+			} else {
+				customNumber12SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber13 != nil {
+			if !contact.CustomNumber13.IsNull {
+				customNumber13SQL = sql.NullFloat64{Float64: contact.CustomNumber13.Float64, Valid: true}
+			} else {
+				customNumber13SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber14 != nil {
+			if !contact.CustomNumber14.IsNull {
+				customNumber14SQL = sql.NullFloat64{Float64: contact.CustomNumber14.Float64, Valid: true}
+			} else {
+				customNumber14SQL = sql.NullFloat64{Valid: false}
+			}
+		}
+		if contact.CustomNumber15 != nil {
+			if !contact.CustomNumber15.IsNull {
+				customNumber15SQL = sql.NullFloat64{Float64: contact.CustomNumber15.Float64, Valid: true}
+			} else {
+				customNumber15SQL = sql.NullFloat64{Valid: false}
+			}
+		}
 
 		// Custom datetime fields
 		if contact.CustomDatetime1 != nil {
@@ -743,6 +895,76 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 				customDatetime5SQL = sql.NullTime{Time: contact.CustomDatetime5.Time, Valid: true}
 			} else {
 				customDatetime5SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime6 != nil {
+			if !contact.CustomDatetime6.IsNull {
+				customDatetime6SQL = sql.NullTime{Time: contact.CustomDatetime6.Time, Valid: true}
+			} else {
+				customDatetime6SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime7 != nil {
+			if !contact.CustomDatetime7.IsNull {
+				customDatetime7SQL = sql.NullTime{Time: contact.CustomDatetime7.Time, Valid: true}
+			} else {
+				customDatetime7SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime8 != nil {
+			if !contact.CustomDatetime8.IsNull {
+				customDatetime8SQL = sql.NullTime{Time: contact.CustomDatetime8.Time, Valid: true}
+			} else {
+				customDatetime8SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime9 != nil {
+			if !contact.CustomDatetime9.IsNull {
+				customDatetime9SQL = sql.NullTime{Time: contact.CustomDatetime9.Time, Valid: true}
+			} else {
+				customDatetime9SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime10 != nil {
+			if !contact.CustomDatetime10.IsNull {
+				customDatetime10SQL = sql.NullTime{Time: contact.CustomDatetime10.Time, Valid: true}
+			} else {
+				customDatetime10SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime11 != nil {
+			if !contact.CustomDatetime11.IsNull {
+				customDatetime11SQL = sql.NullTime{Time: contact.CustomDatetime11.Time, Valid: true}
+			} else {
+				customDatetime11SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime12 != nil {
+			if !contact.CustomDatetime12.IsNull {
+				customDatetime12SQL = sql.NullTime{Time: contact.CustomDatetime12.Time, Valid: true}
+			} else {
+				customDatetime12SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime13 != nil {
+			if !contact.CustomDatetime13.IsNull {
+				customDatetime13SQL = sql.NullTime{Time: contact.CustomDatetime13.Time, Valid: true}
+			} else {
+				customDatetime13SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime14 != nil {
+			if !contact.CustomDatetime14.IsNull {
+				customDatetime14SQL = sql.NullTime{Time: contact.CustomDatetime14.Time, Valid: true}
+			} else {
+				customDatetime14SQL = sql.NullTime{Valid: false}
+			}
+		}
+		if contact.CustomDatetime15 != nil {
+			if !contact.CustomDatetime15.IsNull {
+				customDatetime15SQL = sql.NullTime{Time: contact.CustomDatetime15.Time, Valid: true}
+			} else {
+				customDatetime15SQL = sql.NullTime{Valid: false}
 			}
 		}
 
@@ -820,8 +1042,14 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 				"first_name", "last_name", "full_name", "phone", "address_line_1", "address_line_2",
 				"country", "postcode", "state", "job_title",
 				"custom_string_1", "custom_string_2", "custom_string_3", "custom_string_4", "custom_string_5",
+				"custom_string_6", "custom_string_7", "custom_string_8", "custom_string_9", "custom_string_10",
+				"custom_string_11", "custom_string_12", "custom_string_13", "custom_string_14", "custom_string_15",
 				"custom_number_1", "custom_number_2", "custom_number_3", "custom_number_4", "custom_number_5",
+				"custom_number_6", "custom_number_7", "custom_number_8", "custom_number_9", "custom_number_10",
+				"custom_number_11", "custom_number_12", "custom_number_13", "custom_number_14", "custom_number_15",
 				"custom_datetime_1", "custom_datetime_2", "custom_datetime_3", "custom_datetime_4", "custom_datetime_5",
+				"custom_datetime_6", "custom_datetime_7", "custom_datetime_8", "custom_datetime_9", "custom_datetime_10",
+				"custom_datetime_11", "custom_datetime_12", "custom_datetime_13", "custom_datetime_14", "custom_datetime_15",
 				"custom_json_1", "custom_json_2", "custom_json_3", "custom_json_4", "custom_json_5",
 				"created_at", "updated_at", "db_created_at", "db_updated_at",
 			).
@@ -830,8 +1058,14 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 				firstNameSQL, lastNameSQL, fullNameSQL, phoneSQL, addressLine1SQL, addressLine2SQL,
 				countrySQL, postcodeSQL, stateSQL, jobTitleSQL,
 				customString1SQL, customString2SQL, customString3SQL, customString4SQL, customString5SQL,
+				customString6SQL, customString7SQL, customString8SQL, customString9SQL, customString10SQL,
+				customString11SQL, customString12SQL, customString13SQL, customString14SQL, customString15SQL,
 				customNumber1SQL, customNumber2SQL, customNumber3SQL, customNumber4SQL, customNumber5SQL,
+				customNumber6SQL, customNumber7SQL, customNumber8SQL, customNumber9SQL, customNumber10SQL,
+				customNumber11SQL, customNumber12SQL, customNumber13SQL, customNumber14SQL, customNumber15SQL,
 				customDatetime1SQL, customDatetime2SQL, customDatetime3SQL, customDatetime4SQL, customDatetime5SQL,
+				customDatetime6SQL, customDatetime7SQL, customDatetime8SQL, customDatetime9SQL, customDatetime10SQL,
+				customDatetime11SQL, customDatetime12SQL, customDatetime13SQL, customDatetime14SQL, customDatetime15SQL,
 				customJSON1SQL, customJSON2SQL, customJSON3SQL, customJSON4SQL, customJSON5SQL,
 				createdAtValue.UTC(), updatedAtValue.UTC(), contact.DBCreatedAt, contact.DBUpdatedAt,
 			)
@@ -863,8 +1097,14 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 		var firstNameSQL, lastNameSQL, fullNameSQL, phoneSQL, addressLine1SQL, addressLine2SQL sql.NullString
 		var countrySQL, postcodeSQL, stateSQL, jobTitleSQL sql.NullString
 		var customString1SQL, customString2SQL, customString3SQL, customString4SQL, customString5SQL sql.NullString
+		var customString6SQL, customString7SQL, customString8SQL, customString9SQL, customString10SQL sql.NullString
+		var customString11SQL, customString12SQL, customString13SQL, customString14SQL, customString15SQL sql.NullString
 		var customNumber1SQL, customNumber2SQL, customNumber3SQL, customNumber4SQL, customNumber5SQL sql.NullFloat64
+		var customNumber6SQL, customNumber7SQL, customNumber8SQL, customNumber9SQL, customNumber10SQL sql.NullFloat64
+		var customNumber11SQL, customNumber12SQL, customNumber13SQL, customNumber14SQL, customNumber15SQL sql.NullFloat64
 		var customDatetime1SQL, customDatetime2SQL, customDatetime3SQL, customDatetime4SQL, customDatetime5SQL sql.NullTime
+		var customDatetime6SQL, customDatetime7SQL, customDatetime8SQL, customDatetime9SQL, customDatetime10SQL sql.NullTime
+		var customDatetime11SQL, customDatetime12SQL, customDatetime13SQL, customDatetime14SQL, customDatetime15SQL sql.NullTime
 		var customJSON1SQL, customJSON2SQL, customJSON3SQL, customJSON4SQL, customJSON5SQL sql.NullString
 
 		// Convert external ID, timezone, language
@@ -962,6 +1202,56 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 				customString5SQL = sql.NullString{String: existingContact.CustomString5.String, Valid: true}
 			}
 		}
+		if existingContact.CustomString6 != nil {
+			if !existingContact.CustomString6.IsNull {
+				customString6SQL = sql.NullString{String: existingContact.CustomString6.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString7 != nil {
+			if !existingContact.CustomString7.IsNull {
+				customString7SQL = sql.NullString{String: existingContact.CustomString7.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString8 != nil {
+			if !existingContact.CustomString8.IsNull {
+				customString8SQL = sql.NullString{String: existingContact.CustomString8.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString9 != nil {
+			if !existingContact.CustomString9.IsNull {
+				customString9SQL = sql.NullString{String: existingContact.CustomString9.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString10 != nil {
+			if !existingContact.CustomString10.IsNull {
+				customString10SQL = sql.NullString{String: existingContact.CustomString10.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString11 != nil {
+			if !existingContact.CustomString11.IsNull {
+				customString11SQL = sql.NullString{String: existingContact.CustomString11.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString12 != nil {
+			if !existingContact.CustomString12.IsNull {
+				customString12SQL = sql.NullString{String: existingContact.CustomString12.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString13 != nil {
+			if !existingContact.CustomString13.IsNull {
+				customString13SQL = sql.NullString{String: existingContact.CustomString13.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString14 != nil {
+			if !existingContact.CustomString14.IsNull {
+				customString14SQL = sql.NullString{String: existingContact.CustomString14.String, Valid: true}
+			}
+		}
+		if existingContact.CustomString15 != nil {
+			if !existingContact.CustomString15.IsNull {
+				customString15SQL = sql.NullString{String: existingContact.CustomString15.String, Valid: true}
+			}
+		}
 
 		// Convert custom number fields
 		if existingContact.CustomNumber1 != nil {
@@ -989,6 +1279,56 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 				customNumber5SQL = sql.NullFloat64{Float64: existingContact.CustomNumber5.Float64, Valid: true}
 			}
 		}
+		if existingContact.CustomNumber6 != nil {
+			if !existingContact.CustomNumber6.IsNull {
+				customNumber6SQL = sql.NullFloat64{Float64: existingContact.CustomNumber6.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber7 != nil {
+			if !existingContact.CustomNumber7.IsNull {
+				customNumber7SQL = sql.NullFloat64{Float64: existingContact.CustomNumber7.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber8 != nil {
+			if !existingContact.CustomNumber8.IsNull {
+				customNumber8SQL = sql.NullFloat64{Float64: existingContact.CustomNumber8.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber9 != nil {
+			if !existingContact.CustomNumber9.IsNull {
+				customNumber9SQL = sql.NullFloat64{Float64: existingContact.CustomNumber9.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber10 != nil {
+			if !existingContact.CustomNumber10.IsNull {
+				customNumber10SQL = sql.NullFloat64{Float64: existingContact.CustomNumber10.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber11 != nil {
+			if !existingContact.CustomNumber11.IsNull {
+				customNumber11SQL = sql.NullFloat64{Float64: existingContact.CustomNumber11.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber12 != nil {
+			if !existingContact.CustomNumber12.IsNull {
+				customNumber12SQL = sql.NullFloat64{Float64: existingContact.CustomNumber12.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber13 != nil {
+			if !existingContact.CustomNumber13.IsNull {
+				customNumber13SQL = sql.NullFloat64{Float64: existingContact.CustomNumber13.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber14 != nil {
+			if !existingContact.CustomNumber14.IsNull {
+				customNumber14SQL = sql.NullFloat64{Float64: existingContact.CustomNumber14.Float64, Valid: true}
+			}
+		}
+		if existingContact.CustomNumber15 != nil {
+			if !existingContact.CustomNumber15.IsNull {
+				customNumber15SQL = sql.NullFloat64{Float64: existingContact.CustomNumber15.Float64, Valid: true}
+			}
+		}
 
 		// Convert custom datetime fields
 		if existingContact.CustomDatetime1 != nil {
@@ -1014,6 +1354,56 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 		if existingContact.CustomDatetime5 != nil {
 			if !existingContact.CustomDatetime5.IsNull {
 				customDatetime5SQL = sql.NullTime{Time: existingContact.CustomDatetime5.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime6 != nil {
+			if !existingContact.CustomDatetime6.IsNull {
+				customDatetime6SQL = sql.NullTime{Time: existingContact.CustomDatetime6.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime7 != nil {
+			if !existingContact.CustomDatetime7.IsNull {
+				customDatetime7SQL = sql.NullTime{Time: existingContact.CustomDatetime7.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime8 != nil {
+			if !existingContact.CustomDatetime8.IsNull {
+				customDatetime8SQL = sql.NullTime{Time: existingContact.CustomDatetime8.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime9 != nil {
+			if !existingContact.CustomDatetime9.IsNull {
+				customDatetime9SQL = sql.NullTime{Time: existingContact.CustomDatetime9.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime10 != nil {
+			if !existingContact.CustomDatetime10.IsNull {
+				customDatetime10SQL = sql.NullTime{Time: existingContact.CustomDatetime10.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime11 != nil {
+			if !existingContact.CustomDatetime11.IsNull {
+				customDatetime11SQL = sql.NullTime{Time: existingContact.CustomDatetime11.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime12 != nil {
+			if !existingContact.CustomDatetime12.IsNull {
+				customDatetime12SQL = sql.NullTime{Time: existingContact.CustomDatetime12.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime13 != nil {
+			if !existingContact.CustomDatetime13.IsNull {
+				customDatetime13SQL = sql.NullTime{Time: existingContact.CustomDatetime13.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime14 != nil {
+			if !existingContact.CustomDatetime14.IsNull {
+				customDatetime14SQL = sql.NullTime{Time: existingContact.CustomDatetime14.Time, Valid: true}
+			}
+		}
+		if existingContact.CustomDatetime15 != nil {
+			if !existingContact.CustomDatetime15.IsNull {
+				customDatetime15SQL = sql.NullTime{Time: existingContact.CustomDatetime15.Time, Valid: true}
 			}
 		}
 
@@ -1084,16 +1474,46 @@ func (r *contactRepository) UpsertContact(ctx context.Context, workspaceID strin
 			"custom_string_3":   customString3SQL,
 			"custom_string_4":   customString4SQL,
 			"custom_string_5":   customString5SQL,
+			"custom_string_6":   customString6SQL,
+			"custom_string_7":   customString7SQL,
+			"custom_string_8":   customString8SQL,
+			"custom_string_9":   customString9SQL,
+			"custom_string_10":  customString10SQL,
+			"custom_string_11":  customString11SQL,
+			"custom_string_12":  customString12SQL,
+			"custom_string_13":  customString13SQL,
+			"custom_string_14":  customString14SQL,
+			"custom_string_15":  customString15SQL,
 			"custom_number_1":   customNumber1SQL,
 			"custom_number_2":   customNumber2SQL,
 			"custom_number_3":   customNumber3SQL,
 			"custom_number_4":   customNumber4SQL,
 			"custom_number_5":   customNumber5SQL,
+			"custom_number_6":   customNumber6SQL,
+			"custom_number_7":   customNumber7SQL,
+			"custom_number_8":   customNumber8SQL,
+			"custom_number_9":   customNumber9SQL,
+			"custom_number_10":  customNumber10SQL,
+			"custom_number_11":  customNumber11SQL,
+			"custom_number_12":  customNumber12SQL,
+			"custom_number_13":  customNumber13SQL,
+			"custom_number_14":  customNumber14SQL,
+			"custom_number_15":  customNumber15SQL,
 			"custom_datetime_1": customDatetime1SQL,
 			"custom_datetime_2": customDatetime2SQL,
 			"custom_datetime_3": customDatetime3SQL,
 			"custom_datetime_4": customDatetime4SQL,
 			"custom_datetime_5": customDatetime5SQL,
+			"custom_datetime_6": customDatetime6SQL,
+			"custom_datetime_7": customDatetime7SQL,
+			"custom_datetime_8": customDatetime8SQL,
+			"custom_datetime_9": customDatetime9SQL,
+			"custom_datetime_10": customDatetime10SQL,
+			"custom_datetime_11": customDatetime11SQL,
+			"custom_datetime_12": customDatetime12SQL,
+			"custom_datetime_13": customDatetime13SQL,
+			"custom_datetime_14": customDatetime14SQL,
+			"custom_datetime_15": customDatetime15SQL,
 			"custom_json_1":     customJSON1SQL,
 			"custom_json_2":     customJSON2SQL,
 			"custom_json_3":     customJSON3SQL,
@@ -1192,7 +1612,7 @@ func (r *contactRepository) BulkUpsertContacts(ctx context.Context, workspaceID 
 	// Build the multi-row INSERT statement
 	// We'll use a raw SQL query because squirrel doesn't handle complex ON CONFLICT well
 	var queryBuilder strings.Builder
-	args := make([]interface{}, 0, len(contacts)*36) // 36 fields per contact (db_created_at and db_updated_at are managed by DB)
+	args := make([]interface{}, 0, len(contacts)*66) // 66 fields per contact (db_created_at and db_updated_at are managed by DB)
 	argIndex := 1
 
 	queryBuilder.WriteString(`INSERT INTO contacts (
@@ -1200,8 +1620,14 @@ func (r *contactRepository) BulkUpsertContacts(ctx context.Context, workspaceID 
 		first_name, last_name, full_name, phone, address_line_1, address_line_2,
 		country, postcode, state, job_title,
 		custom_string_1, custom_string_2, custom_string_3, custom_string_4, custom_string_5,
+		custom_string_6, custom_string_7, custom_string_8, custom_string_9, custom_string_10,
+		custom_string_11, custom_string_12, custom_string_13, custom_string_14, custom_string_15,
 		custom_number_1, custom_number_2, custom_number_3, custom_number_4, custom_number_5,
+		custom_number_6, custom_number_7, custom_number_8, custom_number_9, custom_number_10,
+		custom_number_11, custom_number_12, custom_number_13, custom_number_14, custom_number_15,
 		custom_datetime_1, custom_datetime_2, custom_datetime_3, custom_datetime_4, custom_datetime_5,
+		custom_datetime_6, custom_datetime_7, custom_datetime_8, custom_datetime_9, custom_datetime_10,
+		custom_datetime_11, custom_datetime_12, custom_datetime_13, custom_datetime_14, custom_datetime_15,
 		custom_json_1, custom_json_2, custom_json_3, custom_json_4, custom_json_5,
 		created_at, updated_at
 	) VALUES `)
@@ -1213,8 +1639,8 @@ func (r *contactRepository) BulkUpsertContacts(ctx context.Context, workspaceID 
 		}
 		queryBuilder.WriteString("(")
 
-		// Add 36 placeholders for contact fields (excluding db_created_at and db_updated_at)
-		for j := 0; j < 36; j++ {
+		// Add 66 placeholders for contact fields (excluding db_created_at and db_updated_at)
+		for j := 0; j < 66; j++ {
 			if j > 0 {
 				queryBuilder.WriteString(", ")
 			}
@@ -1237,42 +1663,72 @@ func (r *contactRepository) BulkUpsertContacts(ctx context.Context, workspaceID 
 		// Add all field values in the correct order
 		// Note: db_created_at and db_updated_at are NOT included - they have DEFAULT CURRENT_TIMESTAMP in the schema
 		args = append(args,
-			contact.Email,                        // 1
-			contactToNullString(contact.ExternalID),     // 2
-			contactToNullString(contact.Timezone),       // 3
-			contactToNullString(contact.Language),       // 4
-			contactToNullString(contact.FirstName),      // 5
-			contactToNullString(contact.LastName),       // 6
-			contactToNullString(contact.FullName),       // 7
-			contactToNullString(contact.Phone),          // 8
-			contactToNullString(contact.AddressLine1),   // 9
-			contactToNullString(contact.AddressLine2),   // 10
-			contactToNullString(contact.Country),        // 11
-			contactToNullString(contact.Postcode),       // 12
-			contactToNullString(contact.State),          // 13
-			contactToNullString(contact.JobTitle),       // 14
-			contactToNullString(contact.CustomString1),  // 15
-			contactToNullString(contact.CustomString2),  // 16
-			contactToNullString(contact.CustomString3),  // 17
-			contactToNullString(contact.CustomString4),  // 18
-			contactToNullString(contact.CustomString5),  // 19
-			contactToNullFloat64(contact.CustomNumber1), // 20
-			contactToNullFloat64(contact.CustomNumber2), // 21
-			contactToNullFloat64(contact.CustomNumber3), // 22
-			contactToNullFloat64(contact.CustomNumber4), // 23
-			contactToNullFloat64(contact.CustomNumber5), // 24
-			contactToNullTime(contact.CustomDatetime1),  // 25
-			contactToNullTime(contact.CustomDatetime2),  // 26
-			contactToNullTime(contact.CustomDatetime3),  // 27
-			contactToNullTime(contact.CustomDatetime4),  // 28
-			contactToNullTime(contact.CustomDatetime5),  // 29
-			contactToNullJSON(contact.CustomJSON1),      // 30
-			contactToNullJSON(contact.CustomJSON2),      // 31
-			contactToNullJSON(contact.CustomJSON3),      // 32
-			contactToNullJSON(contact.CustomJSON4),      // 33
-			contactToNullJSON(contact.CustomJSON5),      // 34
-			createdAt,                            // 35 - application-level timestamp
-			updatedAt,                            // 36 - application-level timestamp
+			contact.Email,                          // 1
+			contactToNullString(contact.ExternalID),       // 2
+			contactToNullString(contact.Timezone),         // 3
+			contactToNullString(contact.Language),         // 4
+			contactToNullString(contact.FirstName),        // 5
+			contactToNullString(contact.LastName),         // 6
+			contactToNullString(contact.FullName),         // 7
+			contactToNullString(contact.Phone),            // 8
+			contactToNullString(contact.AddressLine1),     // 9
+			contactToNullString(contact.AddressLine2),     // 10
+			contactToNullString(contact.Country),          // 11
+			contactToNullString(contact.Postcode),         // 12
+			contactToNullString(contact.State),            // 13
+			contactToNullString(contact.JobTitle),         // 14
+			contactToNullString(contact.CustomString1),    // 15
+			contactToNullString(contact.CustomString2),    // 16
+			contactToNullString(contact.CustomString3),    // 17
+			contactToNullString(contact.CustomString4),    // 18
+			contactToNullString(contact.CustomString5),    // 19
+			contactToNullString(contact.CustomString6),    // 20
+			contactToNullString(contact.CustomString7),    // 21
+			contactToNullString(contact.CustomString8),    // 22
+			contactToNullString(contact.CustomString9),    // 23
+			contactToNullString(contact.CustomString10),   // 24
+			contactToNullString(contact.CustomString11),   // 25
+			contactToNullString(contact.CustomString12),   // 26
+			contactToNullString(contact.CustomString13),   // 27
+			contactToNullString(contact.CustomString14),   // 28
+			contactToNullString(contact.CustomString15),   // 29
+			contactToNullFloat64(contact.CustomNumber1),   // 30
+			contactToNullFloat64(contact.CustomNumber2),   // 31
+			contactToNullFloat64(contact.CustomNumber3),   // 32
+			contactToNullFloat64(contact.CustomNumber4),   // 33
+			contactToNullFloat64(contact.CustomNumber5),   // 34
+			contactToNullFloat64(contact.CustomNumber6),   // 35
+			contactToNullFloat64(contact.CustomNumber7),   // 36
+			contactToNullFloat64(contact.CustomNumber8),   // 37
+			contactToNullFloat64(contact.CustomNumber9),   // 38
+			contactToNullFloat64(contact.CustomNumber10),  // 39
+			contactToNullFloat64(contact.CustomNumber11),  // 40
+			contactToNullFloat64(contact.CustomNumber12),  // 41
+			contactToNullFloat64(contact.CustomNumber13),  // 42
+			contactToNullFloat64(contact.CustomNumber14),  // 43
+			contactToNullFloat64(contact.CustomNumber15),  // 44
+			contactToNullTime(contact.CustomDatetime1),    // 45
+			contactToNullTime(contact.CustomDatetime2),    // 46
+			contactToNullTime(contact.CustomDatetime3),    // 47
+			contactToNullTime(contact.CustomDatetime4),    // 48
+			contactToNullTime(contact.CustomDatetime5),    // 49
+			contactToNullTime(contact.CustomDatetime6),    // 50
+			contactToNullTime(contact.CustomDatetime7),    // 51
+			contactToNullTime(contact.CustomDatetime8),    // 52
+			contactToNullTime(contact.CustomDatetime9),    // 53
+			contactToNullTime(contact.CustomDatetime10),   // 54
+			contactToNullTime(contact.CustomDatetime11),   // 55
+			contactToNullTime(contact.CustomDatetime12),   // 56
+			contactToNullTime(contact.CustomDatetime13),   // 57
+			contactToNullTime(contact.CustomDatetime14),   // 58
+			contactToNullTime(contact.CustomDatetime15),   // 59
+			contactToNullJSON(contact.CustomJSON1),        // 60
+			contactToNullJSON(contact.CustomJSON2),        // 61
+			contactToNullJSON(contact.CustomJSON3),        // 62
+			contactToNullJSON(contact.CustomJSON4),        // 63
+			contactToNullJSON(contact.CustomJSON5),        // 64
+			createdAt,                              // 65 - application-level timestamp
+			updatedAt,                              // 66 - application-level timestamp
 		)
 	}
 
@@ -1299,16 +1755,46 @@ func (r *contactRepository) BulkUpsertContacts(ctx context.Context, workspaceID 
 		custom_string_3 = CASE WHEN EXCLUDED.custom_string_3 IS NOT NULL THEN EXCLUDED.custom_string_3 ELSE contacts.custom_string_3 END,
 		custom_string_4 = CASE WHEN EXCLUDED.custom_string_4 IS NOT NULL THEN EXCLUDED.custom_string_4 ELSE contacts.custom_string_4 END,
 		custom_string_5 = CASE WHEN EXCLUDED.custom_string_5 IS NOT NULL THEN EXCLUDED.custom_string_5 ELSE contacts.custom_string_5 END,
+		custom_string_6 = CASE WHEN EXCLUDED.custom_string_6 IS NOT NULL THEN EXCLUDED.custom_string_6 ELSE contacts.custom_string_6 END,
+		custom_string_7 = CASE WHEN EXCLUDED.custom_string_7 IS NOT NULL THEN EXCLUDED.custom_string_7 ELSE contacts.custom_string_7 END,
+		custom_string_8 = CASE WHEN EXCLUDED.custom_string_8 IS NOT NULL THEN EXCLUDED.custom_string_8 ELSE contacts.custom_string_8 END,
+		custom_string_9 = CASE WHEN EXCLUDED.custom_string_9 IS NOT NULL THEN EXCLUDED.custom_string_9 ELSE contacts.custom_string_9 END,
+		custom_string_10 = CASE WHEN EXCLUDED.custom_string_10 IS NOT NULL THEN EXCLUDED.custom_string_10 ELSE contacts.custom_string_10 END,
+		custom_string_11 = CASE WHEN EXCLUDED.custom_string_11 IS NOT NULL THEN EXCLUDED.custom_string_11 ELSE contacts.custom_string_11 END,
+		custom_string_12 = CASE WHEN EXCLUDED.custom_string_12 IS NOT NULL THEN EXCLUDED.custom_string_12 ELSE contacts.custom_string_12 END,
+		custom_string_13 = CASE WHEN EXCLUDED.custom_string_13 IS NOT NULL THEN EXCLUDED.custom_string_13 ELSE contacts.custom_string_13 END,
+		custom_string_14 = CASE WHEN EXCLUDED.custom_string_14 IS NOT NULL THEN EXCLUDED.custom_string_14 ELSE contacts.custom_string_14 END,
+		custom_string_15 = CASE WHEN EXCLUDED.custom_string_15 IS NOT NULL THEN EXCLUDED.custom_string_15 ELSE contacts.custom_string_15 END,
 		custom_number_1 = CASE WHEN EXCLUDED.custom_number_1 IS NOT NULL THEN EXCLUDED.custom_number_1 ELSE contacts.custom_number_1 END,
 		custom_number_2 = CASE WHEN EXCLUDED.custom_number_2 IS NOT NULL THEN EXCLUDED.custom_number_2 ELSE contacts.custom_number_2 END,
 		custom_number_3 = CASE WHEN EXCLUDED.custom_number_3 IS NOT NULL THEN EXCLUDED.custom_number_3 ELSE contacts.custom_number_3 END,
 		custom_number_4 = CASE WHEN EXCLUDED.custom_number_4 IS NOT NULL THEN EXCLUDED.custom_number_4 ELSE contacts.custom_number_4 END,
 		custom_number_5 = CASE WHEN EXCLUDED.custom_number_5 IS NOT NULL THEN EXCLUDED.custom_number_5 ELSE contacts.custom_number_5 END,
+		custom_number_6 = CASE WHEN EXCLUDED.custom_number_6 IS NOT NULL THEN EXCLUDED.custom_number_6 ELSE contacts.custom_number_6 END,
+		custom_number_7 = CASE WHEN EXCLUDED.custom_number_7 IS NOT NULL THEN EXCLUDED.custom_number_7 ELSE contacts.custom_number_7 END,
+		custom_number_8 = CASE WHEN EXCLUDED.custom_number_8 IS NOT NULL THEN EXCLUDED.custom_number_8 ELSE contacts.custom_number_8 END,
+		custom_number_9 = CASE WHEN EXCLUDED.custom_number_9 IS NOT NULL THEN EXCLUDED.custom_number_9 ELSE contacts.custom_number_9 END,
+		custom_number_10 = CASE WHEN EXCLUDED.custom_number_10 IS NOT NULL THEN EXCLUDED.custom_number_10 ELSE contacts.custom_number_10 END,
+		custom_number_11 = CASE WHEN EXCLUDED.custom_number_11 IS NOT NULL THEN EXCLUDED.custom_number_11 ELSE contacts.custom_number_11 END,
+		custom_number_12 = CASE WHEN EXCLUDED.custom_number_12 IS NOT NULL THEN EXCLUDED.custom_number_12 ELSE contacts.custom_number_12 END,
+		custom_number_13 = CASE WHEN EXCLUDED.custom_number_13 IS NOT NULL THEN EXCLUDED.custom_number_13 ELSE contacts.custom_number_13 END,
+		custom_number_14 = CASE WHEN EXCLUDED.custom_number_14 IS NOT NULL THEN EXCLUDED.custom_number_14 ELSE contacts.custom_number_14 END,
+		custom_number_15 = CASE WHEN EXCLUDED.custom_number_15 IS NOT NULL THEN EXCLUDED.custom_number_15 ELSE contacts.custom_number_15 END,
 		custom_datetime_1 = CASE WHEN EXCLUDED.custom_datetime_1 IS NOT NULL THEN EXCLUDED.custom_datetime_1 ELSE contacts.custom_datetime_1 END,
 		custom_datetime_2 = CASE WHEN EXCLUDED.custom_datetime_2 IS NOT NULL THEN EXCLUDED.custom_datetime_2 ELSE contacts.custom_datetime_2 END,
 		custom_datetime_3 = CASE WHEN EXCLUDED.custom_datetime_3 IS NOT NULL THEN EXCLUDED.custom_datetime_3 ELSE contacts.custom_datetime_3 END,
 		custom_datetime_4 = CASE WHEN EXCLUDED.custom_datetime_4 IS NOT NULL THEN EXCLUDED.custom_datetime_4 ELSE contacts.custom_datetime_4 END,
 		custom_datetime_5 = CASE WHEN EXCLUDED.custom_datetime_5 IS NOT NULL THEN EXCLUDED.custom_datetime_5 ELSE contacts.custom_datetime_5 END,
+		custom_datetime_6 = CASE WHEN EXCLUDED.custom_datetime_6 IS NOT NULL THEN EXCLUDED.custom_datetime_6 ELSE contacts.custom_datetime_6 END,
+		custom_datetime_7 = CASE WHEN EXCLUDED.custom_datetime_7 IS NOT NULL THEN EXCLUDED.custom_datetime_7 ELSE contacts.custom_datetime_7 END,
+		custom_datetime_8 = CASE WHEN EXCLUDED.custom_datetime_8 IS NOT NULL THEN EXCLUDED.custom_datetime_8 ELSE contacts.custom_datetime_8 END,
+		custom_datetime_9 = CASE WHEN EXCLUDED.custom_datetime_9 IS NOT NULL THEN EXCLUDED.custom_datetime_9 ELSE contacts.custom_datetime_9 END,
+		custom_datetime_10 = CASE WHEN EXCLUDED.custom_datetime_10 IS NOT NULL THEN EXCLUDED.custom_datetime_10 ELSE contacts.custom_datetime_10 END,
+		custom_datetime_11 = CASE WHEN EXCLUDED.custom_datetime_11 IS NOT NULL THEN EXCLUDED.custom_datetime_11 ELSE contacts.custom_datetime_11 END,
+		custom_datetime_12 = CASE WHEN EXCLUDED.custom_datetime_12 IS NOT NULL THEN EXCLUDED.custom_datetime_12 ELSE contacts.custom_datetime_12 END,
+		custom_datetime_13 = CASE WHEN EXCLUDED.custom_datetime_13 IS NOT NULL THEN EXCLUDED.custom_datetime_13 ELSE contacts.custom_datetime_13 END,
+		custom_datetime_14 = CASE WHEN EXCLUDED.custom_datetime_14 IS NOT NULL THEN EXCLUDED.custom_datetime_14 ELSE contacts.custom_datetime_14 END,
+		custom_datetime_15 = CASE WHEN EXCLUDED.custom_datetime_15 IS NOT NULL THEN EXCLUDED.custom_datetime_15 ELSE contacts.custom_datetime_15 END,
 		custom_json_1 = CASE WHEN EXCLUDED.custom_json_1 IS NOT NULL THEN EXCLUDED.custom_json_1 ELSE contacts.custom_json_1 END,
 		custom_json_2 = CASE WHEN EXCLUDED.custom_json_2 IS NOT NULL THEN EXCLUDED.custom_json_2 ELSE contacts.custom_json_2 END,
 		custom_json_3 = CASE WHEN EXCLUDED.custom_json_3 IS NOT NULL THEN EXCLUDED.custom_json_3 ELSE contacts.custom_json_3 END,

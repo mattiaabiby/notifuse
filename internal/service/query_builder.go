@@ -51,6 +51,8 @@ func (qb *QueryBuilder) initializeContactFields() {
 		"address_line_1", "address_line_2", "country", "postcode", "state",
 		"job_title",
 		"custom_string_1", "custom_string_2", "custom_string_3", "custom_string_4", "custom_string_5",
+		"custom_string_6", "custom_string_7", "custom_string_8", "custom_string_9", "custom_string_10",
+		"custom_string_11", "custom_string_12", "custom_string_13", "custom_string_14", "custom_string_15",
 	}
 	for _, field := range stringFields {
 		qb.allowedFields[field] = fieldConfig{
@@ -62,6 +64,8 @@ func (qb *QueryBuilder) initializeContactFields() {
 	// Number fields
 	numberFields := []string{
 		"custom_number_1", "custom_number_2", "custom_number_3", "custom_number_4", "custom_number_5",
+		"custom_number_6", "custom_number_7", "custom_number_8", "custom_number_9", "custom_number_10",
+		"custom_number_11", "custom_number_12", "custom_number_13", "custom_number_14", "custom_number_15",
 	}
 	for _, field := range numberFields {
 		qb.allowedFields[field] = fieldConfig{
@@ -74,6 +78,8 @@ func (qb *QueryBuilder) initializeContactFields() {
 	timeFields := []string{
 		"created_at", "updated_at",
 		"custom_datetime_1", "custom_datetime_2", "custom_datetime_3", "custom_datetime_4", "custom_datetime_5",
+		"custom_datetime_6", "custom_datetime_7", "custom_datetime_8", "custom_datetime_9", "custom_datetime_10",
+		"custom_datetime_11", "custom_datetime_12", "custom_datetime_13", "custom_datetime_14", "custom_datetime_15",
 	}
 	for _, field := range timeFields {
 		qb.allowedFields[field] = fieldConfig{

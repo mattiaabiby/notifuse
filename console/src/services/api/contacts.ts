@@ -41,18 +41,48 @@ export interface Contact {
   custom_string_3?: string
   custom_string_4?: string
   custom_string_5?: string
+  custom_string_6?: string
+  custom_string_7?: string
+  custom_string_8?: string
+  custom_string_9?: string
+  custom_string_10?: string
+  custom_string_11?: string
+  custom_string_12?: string
+  custom_string_13?: string
+  custom_string_14?: string
+  custom_string_15?: string
 
   custom_number_1?: number
   custom_number_2?: number
   custom_number_3?: number
   custom_number_4?: number
   custom_number_5?: number
+  custom_number_6?: number
+  custom_number_7?: number
+  custom_number_8?: number
+  custom_number_9?: number
+  custom_number_10?: number
+  custom_number_11?: number
+  custom_number_12?: number
+  custom_number_13?: number
+  custom_number_14?: number
+  custom_number_15?: number
 
   custom_datetime_1?: string
   custom_datetime_2?: string
   custom_datetime_3?: string
   custom_datetime_4?: string
   custom_datetime_5?: string
+  custom_datetime_6?: string
+  custom_datetime_7?: string
+  custom_datetime_8?: string
+  custom_datetime_9?: string
+  custom_datetime_10?: string
+  custom_datetime_11?: string
+  custom_datetime_12?: string
+  custom_datetime_13?: string
+  custom_datetime_14?: string
+  custom_datetime_15?: string
 
   custom_json_1?: unknown
   custom_json_2?: unknown

@@ -146,6 +146,76 @@ export const ContactsTableSchema: TableSchema = {
       type: 'string',
       shown: true
     },
+    custom_string_6: {
+      name: 'custom_string_6',
+      title: 'Custom String 6',
+      description: 'Custom string field 6',
+      type: 'string',
+      shown: true
+    },
+    custom_string_7: {
+      name: 'custom_string_7',
+      title: 'Custom String 7',
+      description: 'Custom string field 7',
+      type: 'string',
+      shown: true
+    },
+    custom_string_8: {
+      name: 'custom_string_8',
+      title: 'Custom String 8',
+      description: 'Custom string field 8',
+      type: 'string',
+      shown: true
+    },
+    custom_string_9: {
+      name: 'custom_string_9',
+      title: 'Custom String 9',
+      description: 'Custom string field 9',
+      type: 'string',
+      shown: true
+    },
+    custom_string_10: {
+      name: 'custom_string_10',
+      title: 'Custom String 10',
+      description: 'Custom string field 10',
+      type: 'string',
+      shown: true
+    },
+    custom_string_11: {
+      name: 'custom_string_11',
+      title: 'Custom String 11',
+      description: 'Custom string field 11',
+      type: 'string',
+      shown: true
+    },
+    custom_string_12: {
+      name: 'custom_string_12',
+      title: 'Custom String 12',
+      description: 'Custom string field 12',
+      type: 'string',
+      shown: true
+    },
+    custom_string_13: {
+      name: 'custom_string_13',
+      title: 'Custom String 13',
+      description: 'Custom string field 13',
+      type: 'string',
+      shown: true
+    },
+    custom_string_14: {
+      name: 'custom_string_14',
+      title: 'Custom String 14',
+      description: 'Custom string field 14',
+      type: 'string',
+      shown: true
+    },
+    custom_string_15: {
+      name: 'custom_string_15',
+      title: 'Custom String 15',
+      description: 'Custom string field 15',
+      type: 'string',
+      shown: true
+    },
     // Custom number fields
     custom_number_1: {
       name: 'custom_number_1',
@@ -182,6 +252,76 @@ export const ContactsTableSchema: TableSchema = {
       type: 'number',
       shown: true
     },
+    custom_number_6: {
+      name: 'custom_number_6',
+      title: 'Custom Number 6',
+      description: 'Custom number field 6',
+      type: 'number',
+      shown: true
+    },
+    custom_number_7: {
+      name: 'custom_number_7',
+      title: 'Custom Number 7',
+      description: 'Custom number field 7',
+      type: 'number',
+      shown: true
+    },
+    custom_number_8: {
+      name: 'custom_number_8',
+      title: 'Custom Number 8',
+      description: 'Custom number field 8',
+      type: 'number',
+      shown: true
+    },
+    custom_number_9: {
+      name: 'custom_number_9',
+      title: 'Custom Number 9',
+      description: 'Custom number field 9',
+      type: 'number',
+      shown: true
+    },
+    custom_number_10: {
+      name: 'custom_number_10',
+      title: 'Custom Number 10',
+      description: 'Custom number field 10',
+      type: 'number',
+      shown: true
+    },
+    custom_number_11: {
+      name: 'custom_number_11',
+      title: 'Custom Number 11',
+      description: 'Custom number field 11',
+      type: 'number',
+      shown: true
+    },
+    custom_number_12: {
+      name: 'custom_number_12',
+      title: 'Custom Number 12',
+      description: 'Custom number field 12',
+      type: 'number',
+      shown: true
+    },
+    custom_number_13: {
+      name: 'custom_number_13',
+      title: 'Custom Number 13',
+      description: 'Custom number field 13',
+      type: 'number',
+      shown: true
+    },
+    custom_number_14: {
+      name: 'custom_number_14',
+      title: 'Custom Number 14',
+      description: 'Custom number field 14',
+      type: 'number',
+      shown: true
+    },
+    custom_number_15: {
+      name: 'custom_number_15',
+      title: 'Custom Number 15',
+      description: 'Custom number field 15',
+      type: 'number',
+      shown: true
+    },
     // Custom datetime fields
     custom_datetime_1: {
       name: 'custom_datetime_1',
@@ -215,6 +355,76 @@ export const ContactsTableSchema: TableSchema = {
       name: 'custom_datetime_5',
       title: 'Custom Date 5',
       description: 'Custom datetime field 5',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_6: {
+      name: 'custom_datetime_6',
+      title: 'Custom Date 6',
+      description: 'Custom datetime field 6',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_7: {
+      name: 'custom_datetime_7',
+      title: 'Custom Date 7',
+      description: 'Custom datetime field 7',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_8: {
+      name: 'custom_datetime_8',
+      title: 'Custom Date 8',
+      description: 'Custom datetime field 8',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_9: {
+      name: 'custom_datetime_9',
+      title: 'Custom Date 9',
+      description: 'Custom datetime field 9',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_10: {
+      name: 'custom_datetime_10',
+      title: 'Custom Date 10',
+      description: 'Custom datetime field 10',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_11: {
+      name: 'custom_datetime_11',
+      title: 'Custom Date 11',
+      description: 'Custom datetime field 11',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_12: {
+      name: 'custom_datetime_12',
+      title: 'Custom Date 12',
+      description: 'Custom datetime field 12',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_13: {
+      name: 'custom_datetime_13',
+      title: 'Custom Date 13',
+      description: 'Custom datetime field 13',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_14: {
+      name: 'custom_datetime_14',
+      title: 'Custom Date 14',
+      description: 'Custom datetime field 14',
+      type: 'time',
+      shown: true
+    },
+    custom_datetime_15: {
+      name: 'custom_datetime_15',
+      title: 'Custom Date 15',
+      description: 'Custom datetime field 15',
       type: 'time',
       shown: true
     },

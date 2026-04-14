@@ -33,9 +33,9 @@ interface CustomFieldMapping {
 
 // All available custom fields organized by type
 const CUSTOM_FIELDS_BY_TYPE = {
-  String: Array.from({ length: 5 }, (_, i) => `custom_string_${i + 1}`),
-  Number: Array.from({ length: 5 }, (_, i) => `custom_number_${i + 1}`),
-  Datetime: Array.from({ length: 5 }, (_, i) => `custom_datetime_${i + 1}`),
+  String: Array.from({ length: 15 }, (_, i) => `custom_string_${i + 1}`),
+  Number: Array.from({ length: 15 }, (_, i) => `custom_number_${i + 1}`),
+  Datetime: Array.from({ length: 15 }, (_, i) => `custom_datetime_${i + 1}`),
   JSON: Array.from({ length: 5 }, (_, i) => `custom_json_${i + 1}`)
 }
 

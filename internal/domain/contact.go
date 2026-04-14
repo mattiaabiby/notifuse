@@ -49,19 +49,49 @@ type Contact struct {
 	CustomString2 *NullableString `json:"custom_string_2,omitempty" valid:"optional"`
 	CustomString3 *NullableString `json:"custom_string_3,omitempty" valid:"optional"`
 	CustomString4 *NullableString `json:"custom_string_4,omitempty" valid:"optional"`
-	CustomString5 *NullableString `json:"custom_string_5,omitempty" valid:"optional"`
+	CustomString5  *NullableString `json:"custom_string_5,omitempty"  valid:"optional"`
+	CustomString6  *NullableString `json:"custom_string_6,omitempty"  valid:"optional"`
+	CustomString7  *NullableString `json:"custom_string_7,omitempty"  valid:"optional"`
+	CustomString8  *NullableString `json:"custom_string_8,omitempty"  valid:"optional"`
+	CustomString9  *NullableString `json:"custom_string_9,omitempty"  valid:"optional"`
+	CustomString10 *NullableString `json:"custom_string_10,omitempty" valid:"optional"`
+	CustomString11 *NullableString `json:"custom_string_11,omitempty" valid:"optional"`
+	CustomString12 *NullableString `json:"custom_string_12,omitempty" valid:"optional"`
+	CustomString13 *NullableString `json:"custom_string_13,omitempty" valid:"optional"`
+	CustomString14 *NullableString `json:"custom_string_14,omitempty" valid:"optional"`
+	CustomString15 *NullableString `json:"custom_string_15,omitempty" valid:"optional"`
 
-	CustomNumber1 *NullableFloat64 `json:"custom_number_1,omitempty" valid:"optional"`
-	CustomNumber2 *NullableFloat64 `json:"custom_number_2,omitempty" valid:"optional"`
-	CustomNumber3 *NullableFloat64 `json:"custom_number_3,omitempty" valid:"optional"`
-	CustomNumber4 *NullableFloat64 `json:"custom_number_4,omitempty" valid:"optional"`
-	CustomNumber5 *NullableFloat64 `json:"custom_number_5,omitempty" valid:"optional"`
+	CustomNumber1  *NullableFloat64 `json:"custom_number_1,omitempty"  valid:"optional"`
+	CustomNumber2  *NullableFloat64 `json:"custom_number_2,omitempty"  valid:"optional"`
+	CustomNumber3  *NullableFloat64 `json:"custom_number_3,omitempty"  valid:"optional"`
+	CustomNumber4  *NullableFloat64 `json:"custom_number_4,omitempty"  valid:"optional"`
+	CustomNumber5  *NullableFloat64 `json:"custom_number_5,omitempty"  valid:"optional"`
+	CustomNumber6  *NullableFloat64 `json:"custom_number_6,omitempty"  valid:"optional"`
+	CustomNumber7  *NullableFloat64 `json:"custom_number_7,omitempty"  valid:"optional"`
+	CustomNumber8  *NullableFloat64 `json:"custom_number_8,omitempty"  valid:"optional"`
+	CustomNumber9  *NullableFloat64 `json:"custom_number_9,omitempty"  valid:"optional"`
+	CustomNumber10 *NullableFloat64 `json:"custom_number_10,omitempty" valid:"optional"`
+	CustomNumber11 *NullableFloat64 `json:"custom_number_11,omitempty" valid:"optional"`
+	CustomNumber12 *NullableFloat64 `json:"custom_number_12,omitempty" valid:"optional"`
+	CustomNumber13 *NullableFloat64 `json:"custom_number_13,omitempty" valid:"optional"`
+	CustomNumber14 *NullableFloat64 `json:"custom_number_14,omitempty" valid:"optional"`
+	CustomNumber15 *NullableFloat64 `json:"custom_number_15,omitempty" valid:"optional"`
 
-	CustomDatetime1 *NullableTime `json:"custom_datetime_1,omitempty" valid:"optional"`
-	CustomDatetime2 *NullableTime `json:"custom_datetime_2,omitempty" valid:"optional"`
-	CustomDatetime3 *NullableTime `json:"custom_datetime_3,omitempty" valid:"optional"`
-	CustomDatetime4 *NullableTime `json:"custom_datetime_4,omitempty" valid:"optional"`
-	CustomDatetime5 *NullableTime `json:"custom_datetime_5,omitempty" valid:"optional"`
+	CustomDatetime1  *NullableTime `json:"custom_datetime_1,omitempty"  valid:"optional"`
+	CustomDatetime2  *NullableTime `json:"custom_datetime_2,omitempty"  valid:"optional"`
+	CustomDatetime3  *NullableTime `json:"custom_datetime_3,omitempty"  valid:"optional"`
+	CustomDatetime4  *NullableTime `json:"custom_datetime_4,omitempty"  valid:"optional"`
+	CustomDatetime5  *NullableTime `json:"custom_datetime_5,omitempty"  valid:"optional"`
+	CustomDatetime6  *NullableTime `json:"custom_datetime_6,omitempty"  valid:"optional"`
+	CustomDatetime7  *NullableTime `json:"custom_datetime_7,omitempty"  valid:"optional"`
+	CustomDatetime8  *NullableTime `json:"custom_datetime_8,omitempty"  valid:"optional"`
+	CustomDatetime9  *NullableTime `json:"custom_datetime_9,omitempty"  valid:"optional"`
+	CustomDatetime10 *NullableTime `json:"custom_datetime_10,omitempty" valid:"optional"`
+	CustomDatetime11 *NullableTime `json:"custom_datetime_11,omitempty" valid:"optional"`
+	CustomDatetime12 *NullableTime `json:"custom_datetime_12,omitempty" valid:"optional"`
+	CustomDatetime13 *NullableTime `json:"custom_datetime_13,omitempty" valid:"optional"`
+	CustomDatetime14 *NullableTime `json:"custom_datetime_14,omitempty" valid:"optional"`
+	CustomDatetime15 *NullableTime `json:"custom_datetime_15,omitempty" valid:"optional"`
 
 	CustomJSON1 *NullableJSON `json:"custom_json_1,omitempty" valid:"optional"`
 	CustomJSON2 *NullableJSON `json:"custom_json_2,omitempty" valid:"optional"`
@@ -131,23 +161,53 @@ type dbContact struct {
 	State        sql.NullString
 	JobTitle     sql.NullString
 
-	CustomString1 sql.NullString
-	CustomString2 sql.NullString
-	CustomString3 sql.NullString
-	CustomString4 sql.NullString
-	CustomString5 sql.NullString
+	CustomString1  sql.NullString
+	CustomString2  sql.NullString
+	CustomString3  sql.NullString
+	CustomString4  sql.NullString
+	CustomString5  sql.NullString
+	CustomString6  sql.NullString
+	CustomString7  sql.NullString
+	CustomString8  sql.NullString
+	CustomString9  sql.NullString
+	CustomString10 sql.NullString
+	CustomString11 sql.NullString
+	CustomString12 sql.NullString
+	CustomString13 sql.NullString
+	CustomString14 sql.NullString
+	CustomString15 sql.NullString
 
-	CustomNumber1 sql.NullFloat64
-	CustomNumber2 sql.NullFloat64
-	CustomNumber3 sql.NullFloat64
-	CustomNumber4 sql.NullFloat64
-	CustomNumber5 sql.NullFloat64
+	CustomNumber1  sql.NullFloat64
+	CustomNumber2  sql.NullFloat64
+	CustomNumber3  sql.NullFloat64
+	CustomNumber4  sql.NullFloat64
+	CustomNumber5  sql.NullFloat64
+	CustomNumber6  sql.NullFloat64
+	CustomNumber7  sql.NullFloat64
+	CustomNumber8  sql.NullFloat64
+	CustomNumber9  sql.NullFloat64
+	CustomNumber10 sql.NullFloat64
+	CustomNumber11 sql.NullFloat64
+	CustomNumber12 sql.NullFloat64
+	CustomNumber13 sql.NullFloat64
+	CustomNumber14 sql.NullFloat64
+	CustomNumber15 sql.NullFloat64
 
-	CustomDatetime1 sql.NullTime
-	CustomDatetime2 sql.NullTime
-	CustomDatetime3 sql.NullTime
-	CustomDatetime4 sql.NullTime
-	CustomDatetime5 sql.NullTime
+	CustomDatetime1  sql.NullTime
+	CustomDatetime2  sql.NullTime
+	CustomDatetime3  sql.NullTime
+	CustomDatetime4  sql.NullTime
+	CustomDatetime5  sql.NullTime
+	CustomDatetime6  sql.NullTime
+	CustomDatetime7  sql.NullTime
+	CustomDatetime8  sql.NullTime
+	CustomDatetime9  sql.NullTime
+	CustomDatetime10 sql.NullTime
+	CustomDatetime11 sql.NullTime
+	CustomDatetime12 sql.NullTime
+	CustomDatetime13 sql.NullTime
+	CustomDatetime14 sql.NullTime
+	CustomDatetime15 sql.NullTime
 
 	CustomJSON1 []byte
 	CustomJSON2 []byte
@@ -188,16 +248,46 @@ func ScanContact(scanner interface {
 		&dbc.CustomString3,
 		&dbc.CustomString4,
 		&dbc.CustomString5,
+		&dbc.CustomString6,
+		&dbc.CustomString7,
+		&dbc.CustomString8,
+		&dbc.CustomString9,
+		&dbc.CustomString10,
+		&dbc.CustomString11,
+		&dbc.CustomString12,
+		&dbc.CustomString13,
+		&dbc.CustomString14,
+		&dbc.CustomString15,
 		&dbc.CustomNumber1,
 		&dbc.CustomNumber2,
 		&dbc.CustomNumber3,
 		&dbc.CustomNumber4,
 		&dbc.CustomNumber5,
+		&dbc.CustomNumber6,
+		&dbc.CustomNumber7,
+		&dbc.CustomNumber8,
+		&dbc.CustomNumber9,
+		&dbc.CustomNumber10,
+		&dbc.CustomNumber11,
+		&dbc.CustomNumber12,
+		&dbc.CustomNumber13,
+		&dbc.CustomNumber14,
+		&dbc.CustomNumber15,
 		&dbc.CustomDatetime1,
 		&dbc.CustomDatetime2,
 		&dbc.CustomDatetime3,
 		&dbc.CustomDatetime4,
 		&dbc.CustomDatetime5,
+		&dbc.CustomDatetime6,
+		&dbc.CustomDatetime7,
+		&dbc.CustomDatetime8,
+		&dbc.CustomDatetime9,
+		&dbc.CustomDatetime10,
+		&dbc.CustomDatetime11,
+		&dbc.CustomDatetime12,
+		&dbc.CustomDatetime13,
+		&dbc.CustomDatetime14,
+		&dbc.CustomDatetime15,
 		&dbc.CustomJSON1,
 		&dbc.CustomJSON2,
 		&dbc.CustomJSON3,
@@ -292,6 +382,46 @@ func ScanContact(scanner interface {
 		c.CustomString5 = &NullableString{String: dbc.CustomString5.String, IsNull: false}
 	}
 
+	if dbc.CustomString6.Valid {
+		c.CustomString6 = &NullableString{String: dbc.CustomString6.String, IsNull: false}
+	}
+
+	if dbc.CustomString7.Valid {
+		c.CustomString7 = &NullableString{String: dbc.CustomString7.String, IsNull: false}
+	}
+
+	if dbc.CustomString8.Valid {
+		c.CustomString8 = &NullableString{String: dbc.CustomString8.String, IsNull: false}
+	}
+
+	if dbc.CustomString9.Valid {
+		c.CustomString9 = &NullableString{String: dbc.CustomString9.String, IsNull: false}
+	}
+
+	if dbc.CustomString10.Valid {
+		c.CustomString10 = &NullableString{String: dbc.CustomString10.String, IsNull: false}
+	}
+
+	if dbc.CustomString11.Valid {
+		c.CustomString11 = &NullableString{String: dbc.CustomString11.String, IsNull: false}
+	}
+
+	if dbc.CustomString12.Valid {
+		c.CustomString12 = &NullableString{String: dbc.CustomString12.String, IsNull: false}
+	}
+
+	if dbc.CustomString13.Valid {
+		c.CustomString13 = &NullableString{String: dbc.CustomString13.String, IsNull: false}
+	}
+
+	if dbc.CustomString14.Valid {
+		c.CustomString14 = &NullableString{String: dbc.CustomString14.String, IsNull: false}
+	}
+
+	if dbc.CustomString15.Valid {
+		c.CustomString15 = &NullableString{String: dbc.CustomString15.String, IsNull: false}
+	}
+
 	if dbc.CustomNumber1.Valid {
 		c.CustomNumber1 = &NullableFloat64{Float64: dbc.CustomNumber1.Float64, IsNull: false}
 	}
@@ -312,6 +442,46 @@ func ScanContact(scanner interface {
 		c.CustomNumber5 = &NullableFloat64{Float64: dbc.CustomNumber5.Float64, IsNull: false}
 	}
 
+	if dbc.CustomNumber6.Valid {
+		c.CustomNumber6 = &NullableFloat64{Float64: dbc.CustomNumber6.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber7.Valid {
+		c.CustomNumber7 = &NullableFloat64{Float64: dbc.CustomNumber7.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber8.Valid {
+		c.CustomNumber8 = &NullableFloat64{Float64: dbc.CustomNumber8.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber9.Valid {
+		c.CustomNumber9 = &NullableFloat64{Float64: dbc.CustomNumber9.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber10.Valid {
+		c.CustomNumber10 = &NullableFloat64{Float64: dbc.CustomNumber10.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber11.Valid {
+		c.CustomNumber11 = &NullableFloat64{Float64: dbc.CustomNumber11.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber12.Valid {
+		c.CustomNumber12 = &NullableFloat64{Float64: dbc.CustomNumber12.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber13.Valid {
+		c.CustomNumber13 = &NullableFloat64{Float64: dbc.CustomNumber13.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber14.Valid {
+		c.CustomNumber14 = &NullableFloat64{Float64: dbc.CustomNumber14.Float64, IsNull: false}
+	}
+
+	if dbc.CustomNumber15.Valid {
+		c.CustomNumber15 = &NullableFloat64{Float64: dbc.CustomNumber15.Float64, IsNull: false}
+	}
+
 	if dbc.CustomDatetime1.Valid {
 		c.CustomDatetime1 = &NullableTime{Time: dbc.CustomDatetime1.Time, IsNull: false}
 	}
@@ -330,6 +500,46 @@ func ScanContact(scanner interface {
 
 	if dbc.CustomDatetime5.Valid {
 		c.CustomDatetime5 = &NullableTime{Time: dbc.CustomDatetime5.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime6.Valid {
+		c.CustomDatetime6 = &NullableTime{Time: dbc.CustomDatetime6.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime7.Valid {
+		c.CustomDatetime7 = &NullableTime{Time: dbc.CustomDatetime7.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime8.Valid {
+		c.CustomDatetime8 = &NullableTime{Time: dbc.CustomDatetime8.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime9.Valid {
+		c.CustomDatetime9 = &NullableTime{Time: dbc.CustomDatetime9.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime10.Valid {
+		c.CustomDatetime10 = &NullableTime{Time: dbc.CustomDatetime10.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime11.Valid {
+		c.CustomDatetime11 = &NullableTime{Time: dbc.CustomDatetime11.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime12.Valid {
+		c.CustomDatetime12 = &NullableTime{Time: dbc.CustomDatetime12.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime13.Valid {
+		c.CustomDatetime13 = &NullableTime{Time: dbc.CustomDatetime13.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime14.Valid {
+		c.CustomDatetime14 = &NullableTime{Time: dbc.CustomDatetime14.Time, IsNull: false}
+	}
+
+	if dbc.CustomDatetime15.Valid {
+		c.CustomDatetime15 = &NullableTime{Time: dbc.CustomDatetime15.Time, IsNull: false}
 	}
 
 	// Handle JSON fields
@@ -732,6 +942,36 @@ func FromJSON(data interface{}) (*Contact, error) {
 	if err := parseNullableString(jsonResult, "custom_string_5", &contact.CustomString5); err != nil {
 		return nil, err
 	}
+	if err := parseNullableString(jsonResult, "custom_string_6", &contact.CustomString6); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_7", &contact.CustomString7); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_8", &contact.CustomString8); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_9", &contact.CustomString9); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_10", &contact.CustomString10); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_11", &contact.CustomString11); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_12", &contact.CustomString12); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_13", &contact.CustomString13); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_14", &contact.CustomString14); err != nil {
+		return nil, err
+	}
+	if err := parseNullableString(jsonResult, "custom_string_15", &contact.CustomString15); err != nil {
+		return nil, err
+	}
 
 	// Parse custom number fields
 	if err := parseNullableFloat(jsonResult, "custom_number_1", &contact.CustomNumber1); err != nil {
@@ -749,6 +989,36 @@ func FromJSON(data interface{}) (*Contact, error) {
 	if err := parseNullableFloat(jsonResult, "custom_number_5", &contact.CustomNumber5); err != nil {
 		return nil, err
 	}
+	if err := parseNullableFloat(jsonResult, "custom_number_6", &contact.CustomNumber6); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_7", &contact.CustomNumber7); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_8", &contact.CustomNumber8); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_9", &contact.CustomNumber9); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_10", &contact.CustomNumber10); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_11", &contact.CustomNumber11); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_12", &contact.CustomNumber12); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_13", &contact.CustomNumber13); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_14", &contact.CustomNumber14); err != nil {
+		return nil, err
+	}
+	if err := parseNullableFloat(jsonResult, "custom_number_15", &contact.CustomNumber15); err != nil {
+		return nil, err
+	}
 
 	// Parse custom datetime fields
 	if err := parseNullableTime(jsonResult, "custom_datetime_1", &contact.CustomDatetime1); err != nil {
@@ -764,6 +1034,36 @@ func FromJSON(data interface{}) (*Contact, error) {
 		return nil, err
 	}
 	if err := parseNullableTime(jsonResult, "custom_datetime_5", &contact.CustomDatetime5); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_6", &contact.CustomDatetime6); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_7", &contact.CustomDatetime7); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_8", &contact.CustomDatetime8); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_9", &contact.CustomDatetime9); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_10", &contact.CustomDatetime10); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_11", &contact.CustomDatetime11); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_12", &contact.CustomDatetime12); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_13", &contact.CustomDatetime13); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_14", &contact.CustomDatetime14); err != nil {
+		return nil, err
+	}
+	if err := parseNullableTime(jsonResult, "custom_datetime_15", &contact.CustomDatetime15); err != nil {
 		return nil, err
 	}
 
@@ -941,6 +1241,36 @@ func (c *Contact) Merge(other *Contact) {
 	if other.CustomString5 != nil {
 		c.CustomString5 = other.CustomString5
 	}
+	if other.CustomString6 != nil {
+		c.CustomString6 = other.CustomString6
+	}
+	if other.CustomString7 != nil {
+		c.CustomString7 = other.CustomString7
+	}
+	if other.CustomString8 != nil {
+		c.CustomString8 = other.CustomString8
+	}
+	if other.CustomString9 != nil {
+		c.CustomString9 = other.CustomString9
+	}
+	if other.CustomString10 != nil {
+		c.CustomString10 = other.CustomString10
+	}
+	if other.CustomString11 != nil {
+		c.CustomString11 = other.CustomString11
+	}
+	if other.CustomString12 != nil {
+		c.CustomString12 = other.CustomString12
+	}
+	if other.CustomString13 != nil {
+		c.CustomString13 = other.CustomString13
+	}
+	if other.CustomString14 != nil {
+		c.CustomString14 = other.CustomString14
+	}
+	if other.CustomString15 != nil {
+		c.CustomString15 = other.CustomString15
+	}
 
 	// Custom number fields
 	if other.CustomNumber1 != nil {
@@ -958,6 +1288,36 @@ func (c *Contact) Merge(other *Contact) {
 	if other.CustomNumber5 != nil {
 		c.CustomNumber5 = other.CustomNumber5
 	}
+	if other.CustomNumber6 != nil {
+		c.CustomNumber6 = other.CustomNumber6
+	}
+	if other.CustomNumber7 != nil {
+		c.CustomNumber7 = other.CustomNumber7
+	}
+	if other.CustomNumber8 != nil {
+		c.CustomNumber8 = other.CustomNumber8
+	}
+	if other.CustomNumber9 != nil {
+		c.CustomNumber9 = other.CustomNumber9
+	}
+	if other.CustomNumber10 != nil {
+		c.CustomNumber10 = other.CustomNumber10
+	}
+	if other.CustomNumber11 != nil {
+		c.CustomNumber11 = other.CustomNumber11
+	}
+	if other.CustomNumber12 != nil {
+		c.CustomNumber12 = other.CustomNumber12
+	}
+	if other.CustomNumber13 != nil {
+		c.CustomNumber13 = other.CustomNumber13
+	}
+	if other.CustomNumber14 != nil {
+		c.CustomNumber14 = other.CustomNumber14
+	}
+	if other.CustomNumber15 != nil {
+		c.CustomNumber15 = other.CustomNumber15
+	}
 
 	// Custom datetime fields
 	if other.CustomDatetime1 != nil {
@@ -974,6 +1334,36 @@ func (c *Contact) Merge(other *Contact) {
 	}
 	if other.CustomDatetime5 != nil {
 		c.CustomDatetime5 = other.CustomDatetime5
+	}
+	if other.CustomDatetime6 != nil {
+		c.CustomDatetime6 = other.CustomDatetime6
+	}
+	if other.CustomDatetime7 != nil {
+		c.CustomDatetime7 = other.CustomDatetime7
+	}
+	if other.CustomDatetime8 != nil {
+		c.CustomDatetime8 = other.CustomDatetime8
+	}
+	if other.CustomDatetime9 != nil {
+		c.CustomDatetime9 = other.CustomDatetime9
+	}
+	if other.CustomDatetime10 != nil {
+		c.CustomDatetime10 = other.CustomDatetime10
+	}
+	if other.CustomDatetime11 != nil {
+		c.CustomDatetime11 = other.CustomDatetime11
+	}
+	if other.CustomDatetime12 != nil {
+		c.CustomDatetime12 = other.CustomDatetime12
+	}
+	if other.CustomDatetime13 != nil {
+		c.CustomDatetime13 = other.CustomDatetime13
+	}
+	if other.CustomDatetime14 != nil {
+		c.CustomDatetime14 = other.CustomDatetime14
+	}
+	if other.CustomDatetime15 != nil {
+		c.CustomDatetime15 = other.CustomDatetime15
 	}
 
 	// Custom JSON fields

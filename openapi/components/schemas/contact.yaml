@@ -96,6 +96,46 @@ ContactInput:
       type: string
       nullable: true
       description: Custom string field 5
+    custom_string_6:
+      type: string
+      nullable: true
+      description: Custom string field 6
+    custom_string_7:
+      type: string
+      nullable: true
+      description: Custom string field 7
+    custom_string_8:
+      type: string
+      nullable: true
+      description: Custom string field 8
+    custom_string_9:
+      type: string
+      nullable: true
+      description: Custom string field 9
+    custom_string_10:
+      type: string
+      nullable: true
+      description: Custom string field 10
+    custom_string_11:
+      type: string
+      nullable: true
+      description: Custom string field 11
+    custom_string_12:
+      type: string
+      nullable: true
+      description: Custom string field 12
+    custom_string_13:
+      type: string
+      nullable: true
+      description: Custom string field 13
+    custom_string_14:
+      type: string
+      nullable: true
+      description: Custom string field 14
+    custom_string_15:
+      type: string
+      nullable: true
+      description: Custom string field 15
     custom_number_1:
       type: number
       format: float
@@ -122,6 +162,56 @@ ContactInput:
       format: float
       nullable: true
       description: Custom number field 5
+    custom_number_6:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 6
+    custom_number_7:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 7
+    custom_number_8:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 8
+    custom_number_9:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 9
+    custom_number_10:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 10
+    custom_number_11:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 11
+    custom_number_12:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 12
+    custom_number_13:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 13
+    custom_number_14:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 14
+    custom_number_15:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 15
     custom_datetime_1:
       type: string
       format: date-time
@@ -148,6 +238,56 @@ ContactInput:
       format: date-time
       nullable: true
       description: Custom datetime field 5
+    custom_datetime_6:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 6
+    custom_datetime_7:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 7
+    custom_datetime_8:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 8
+    custom_datetime_9:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 9
+    custom_datetime_10:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 10
+    custom_datetime_11:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 11
+    custom_datetime_12:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 12
+    custom_datetime_13:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 13
+    custom_datetime_14:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 14
+    custom_datetime_15:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 15
     custom_json_1:
       type: object
       nullable: true
@@ -271,6 +411,46 @@ Contact:
       type: string
       nullable: true
       description: Custom string field 5
+    custom_string_6:
+      type: string
+      nullable: true
+      description: Custom string field 6
+    custom_string_7:
+      type: string
+      nullable: true
+      description: Custom string field 7
+    custom_string_8:
+      type: string
+      nullable: true
+      description: Custom string field 8
+    custom_string_9:
+      type: string
+      nullable: true
+      description: Custom string field 9
+    custom_string_10:
+      type: string
+      nullable: true
+      description: Custom string field 10
+    custom_string_11:
+      type: string
+      nullable: true
+      description: Custom string field 11
+    custom_string_12:
+      type: string
+      nullable: true
+      description: Custom string field 12
+    custom_string_13:
+      type: string
+      nullable: true
+      description: Custom string field 13
+    custom_string_14:
+      type: string
+      nullable: true
+      description: Custom string field 14
+    custom_string_15:
+      type: string
+      nullable: true
+      description: Custom string field 15
     custom_number_1:
       type: number
       format: float
@@ -297,6 +477,56 @@ Contact:
       format: float
       nullable: true
       description: Custom number field 5
+    custom_number_6:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 6
+    custom_number_7:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 7
+    custom_number_8:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 8
+    custom_number_9:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 9
+    custom_number_10:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 10
+    custom_number_11:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 11
+    custom_number_12:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 12
+    custom_number_13:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 13
+    custom_number_14:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 14
+    custom_number_15:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 15
     custom_datetime_1:
       type: string
       format: date-time
@@ -323,6 +553,56 @@ Contact:
       format: date-time
       nullable: true
       description: Custom datetime field 5
+    custom_datetime_6:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 6
+    custom_datetime_7:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 7
+    custom_datetime_8:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 8
+    custom_datetime_9:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 9
+    custom_datetime_10:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 10
+    custom_datetime_11:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 11
+    custom_datetime_12:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 12
+    custom_datetime_13:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 13
+    custom_datetime_14:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 14
+    custom_datetime_15:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 15
     custom_json_1:
       type: object
       nullable: true
@@ -574,6 +854,46 @@ SubscriptionContact:
       type: string
       nullable: true
       description: Custom string field 5
+    custom_string_6:
+      type: string
+      nullable: true
+      description: Custom string field 6
+    custom_string_7:
+      type: string
+      nullable: true
+      description: Custom string field 7
+    custom_string_8:
+      type: string
+      nullable: true
+      description: Custom string field 8
+    custom_string_9:
+      type: string
+      nullable: true
+      description: Custom string field 9
+    custom_string_10:
+      type: string
+      nullable: true
+      description: Custom string field 10
+    custom_string_11:
+      type: string
+      nullable: true
+      description: Custom string field 11
+    custom_string_12:
+      type: string
+      nullable: true
+      description: Custom string field 12
+    custom_string_13:
+      type: string
+      nullable: true
+      description: Custom string field 13
+    custom_string_14:
+      type: string
+      nullable: true
+      description: Custom string field 14
+    custom_string_15:
+      type: string
+      nullable: true
+      description: Custom string field 15
     custom_number_1:
       type: number
       format: float
@@ -600,6 +920,56 @@ SubscriptionContact:
       format: float
       nullable: true
       description: Custom number field 5
+    custom_number_6:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 6
+    custom_number_7:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 7
+    custom_number_8:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 8
+    custom_number_9:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 9
+    custom_number_10:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 10
+    custom_number_11:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 11
+    custom_number_12:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 12
+    custom_number_13:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 13
+    custom_number_14:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 14
+    custom_number_15:
+      type: number
+      format: float
+      nullable: true
+      description: Custom number field 15
     custom_datetime_1:
       type: string
       format: date-time
@@ -626,6 +996,56 @@ SubscriptionContact:
       format: date-time
       nullable: true
       description: Custom datetime field 5
+    custom_datetime_6:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 6
+    custom_datetime_7:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 7
+    custom_datetime_8:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 8
+    custom_datetime_9:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 9
+    custom_datetime_10:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 10
+    custom_datetime_11:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 11
+    custom_datetime_12:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 12
+    custom_datetime_13:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 13
+    custom_datetime_14:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 14
+    custom_datetime_15:
+      type: string
+      format: date-time
+      nullable: true
+      description: Custom datetime field 15
     custom_json_1:
       type: object
       nullable: true
