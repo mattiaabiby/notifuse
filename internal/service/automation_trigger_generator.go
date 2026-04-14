@@ -21,12 +21,24 @@ var AllowedContactFields = map[string]bool{
 	// Custom string fields
 	"custom_string_1": true, "custom_string_2": true, "custom_string_3": true,
 	"custom_string_4": true, "custom_string_5": true,
+	"custom_string_6": true, "custom_string_7": true, "custom_string_8": true,
+	"custom_string_9": true, "custom_string_10": true, "custom_string_11": true,
+	"custom_string_12": true, "custom_string_13": true, "custom_string_14": true,
+	"custom_string_15": true,
 	// Custom number fields
 	"custom_number_1": true, "custom_number_2": true, "custom_number_3": true,
 	"custom_number_4": true, "custom_number_5": true,
+	"custom_number_6": true, "custom_number_7": true, "custom_number_8": true,
+	"custom_number_9": true, "custom_number_10": true, "custom_number_11": true,
+	"custom_number_12": true, "custom_number_13": true, "custom_number_14": true,
+	"custom_number_15": true,
 	// Custom datetime fields
 	"custom_datetime_1": true, "custom_datetime_2": true, "custom_datetime_3": true,
 	"custom_datetime_4": true, "custom_datetime_5": true,
+	"custom_datetime_6": true, "custom_datetime_7": true, "custom_datetime_8": true,
+	"custom_datetime_9": true, "custom_datetime_10": true, "custom_datetime_11": true,
+	"custom_datetime_12": true, "custom_datetime_13": true, "custom_datetime_14": true,
+	"custom_datetime_15": true,
 	// Custom JSON fields
 	"custom_json_1": true, "custom_json_2": true, "custom_json_3": true,
 	"custom_json_4": true, "custom_json_5": true,

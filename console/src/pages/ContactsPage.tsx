@@ -56,16 +56,46 @@ const DEFAULT_VISIBLE_COLUMNS = {
   custom_string_3: false,
   custom_string_4: false,
   custom_string_5: false,
+  custom_string_6: false,
+  custom_string_7: false,
+  custom_string_8: false,
+  custom_string_9: false,
+  custom_string_10: false,
+  custom_string_11: false,
+  custom_string_12: false,
+  custom_string_13: false,
+  custom_string_14: false,
+  custom_string_15: false,
   custom_number_1: false,
   custom_number_2: false,
   custom_number_3: false,
   custom_number_4: false,
   custom_number_5: false,
+  custom_number_6: false,
+  custom_number_7: false,
+  custom_number_8: false,
+  custom_number_9: false,
+  custom_number_10: false,
+  custom_number_11: false,
+  custom_number_12: false,
+  custom_number_13: false,
+  custom_number_14: false,
+  custom_number_15: false,
   custom_datetime_1: false,
   custom_datetime_2: false,
   custom_datetime_3: false,
   custom_datetime_4: false,
   custom_datetime_5: false,
+  custom_datetime_6: false,
+  custom_datetime_7: false,
+  custom_datetime_8: false,
+  custom_datetime_9: false,
+  custom_datetime_10: false,
+  custom_datetime_11: false,
+  custom_datetime_12: false,
+  custom_datetime_13: false,
+  custom_datetime_14: false,
+  custom_datetime_15: false,
   custom_json_1: false,
   custom_json_2: false,
   custom_json_3: false,
@@ -272,16 +302,46 @@ export function ContactsPage() {
     { key: 'custom_string_3', title: getCustomFieldLabel('custom_string_3', currentWorkspace) },
     { key: 'custom_string_4', title: getCustomFieldLabel('custom_string_4', currentWorkspace) },
     { key: 'custom_string_5', title: getCustomFieldLabel('custom_string_5', currentWorkspace) },
+    { key: 'custom_string_6', title: getCustomFieldLabel('custom_string_6', currentWorkspace) },
+    { key: 'custom_string_7', title: getCustomFieldLabel('custom_string_7', currentWorkspace) },
+    { key: 'custom_string_8', title: getCustomFieldLabel('custom_string_8', currentWorkspace) },
+    { key: 'custom_string_9', title: getCustomFieldLabel('custom_string_9', currentWorkspace) },
+    { key: 'custom_string_10', title: getCustomFieldLabel('custom_string_10', currentWorkspace) },
+    { key: 'custom_string_11', title: getCustomFieldLabel('custom_string_11', currentWorkspace) },
+    { key: 'custom_string_12', title: getCustomFieldLabel('custom_string_12', currentWorkspace) },
+    { key: 'custom_string_13', title: getCustomFieldLabel('custom_string_13', currentWorkspace) },
+    { key: 'custom_string_14', title: getCustomFieldLabel('custom_string_14', currentWorkspace) },
+    { key: 'custom_string_15', title: getCustomFieldLabel('custom_string_15', currentWorkspace) },
     { key: 'custom_number_1', title: getCustomFieldLabel('custom_number_1', currentWorkspace) },
     { key: 'custom_number_2', title: getCustomFieldLabel('custom_number_2', currentWorkspace) },
     { key: 'custom_number_3', title: getCustomFieldLabel('custom_number_3', currentWorkspace) },
     { key: 'custom_number_4', title: getCustomFieldLabel('custom_number_4', currentWorkspace) },
     { key: 'custom_number_5', title: getCustomFieldLabel('custom_number_5', currentWorkspace) },
+    { key: 'custom_number_6', title: getCustomFieldLabel('custom_number_6', currentWorkspace) },
+    { key: 'custom_number_7', title: getCustomFieldLabel('custom_number_7', currentWorkspace) },
+    { key: 'custom_number_8', title: getCustomFieldLabel('custom_number_8', currentWorkspace) },
+    { key: 'custom_number_9', title: getCustomFieldLabel('custom_number_9', currentWorkspace) },
+    { key: 'custom_number_10', title: getCustomFieldLabel('custom_number_10', currentWorkspace) },
+    { key: 'custom_number_11', title: getCustomFieldLabel('custom_number_11', currentWorkspace) },
+    { key: 'custom_number_12', title: getCustomFieldLabel('custom_number_12', currentWorkspace) },
+    { key: 'custom_number_13', title: getCustomFieldLabel('custom_number_13', currentWorkspace) },
+    { key: 'custom_number_14', title: getCustomFieldLabel('custom_number_14', currentWorkspace) },
+    { key: 'custom_number_15', title: getCustomFieldLabel('custom_number_15', currentWorkspace) },
     { key: 'custom_datetime_1', title: getCustomFieldLabel('custom_datetime_1', currentWorkspace) },
     { key: 'custom_datetime_2', title: getCustomFieldLabel('custom_datetime_2', currentWorkspace) },
     { key: 'custom_datetime_3', title: getCustomFieldLabel('custom_datetime_3', currentWorkspace) },
     { key: 'custom_datetime_4', title: getCustomFieldLabel('custom_datetime_4', currentWorkspace) },
     { key: 'custom_datetime_5', title: getCustomFieldLabel('custom_datetime_5', currentWorkspace) },
+    { key: 'custom_datetime_6', title: getCustomFieldLabel('custom_datetime_6', currentWorkspace) },
+    { key: 'custom_datetime_7', title: getCustomFieldLabel('custom_datetime_7', currentWorkspace) },
+    { key: 'custom_datetime_8', title: getCustomFieldLabel('custom_datetime_8', currentWorkspace) },
+    { key: 'custom_datetime_9', title: getCustomFieldLabel('custom_datetime_9', currentWorkspace) },
+    { key: 'custom_datetime_10', title: getCustomFieldLabel('custom_datetime_10', currentWorkspace) },
+    { key: 'custom_datetime_11', title: getCustomFieldLabel('custom_datetime_11', currentWorkspace) },
+    { key: 'custom_datetime_12', title: getCustomFieldLabel('custom_datetime_12', currentWorkspace) },
+    { key: 'custom_datetime_13', title: getCustomFieldLabel('custom_datetime_13', currentWorkspace) },
+    { key: 'custom_datetime_14', title: getCustomFieldLabel('custom_datetime_14', currentWorkspace) },
+    { key: 'custom_datetime_15', title: getCustomFieldLabel('custom_datetime_15', currentWorkspace) },
     { key: 'custom_json_1', title: getCustomFieldLabel('custom_json_1', currentWorkspace) },
     { key: 'custom_json_2', title: getCustomFieldLabel('custom_json_2', currentWorkspace) },
     { key: 'custom_json_3', title: getCustomFieldLabel('custom_json_3', currentWorkspace) },
@@ -613,6 +673,66 @@ export function ContactsPage() {
       hidden: !visibleColumns.custom_string_5
     },
     {
+      title: getCustomFieldLabel('custom_string_6', currentWorkspace),
+      dataIndex: 'custom_string_6',
+      key: 'custom_string_6',
+      hidden: !visibleColumns.custom_string_6
+    },
+    {
+      title: getCustomFieldLabel('custom_string_7', currentWorkspace),
+      dataIndex: 'custom_string_7',
+      key: 'custom_string_7',
+      hidden: !visibleColumns.custom_string_7
+    },
+    {
+      title: getCustomFieldLabel('custom_string_8', currentWorkspace),
+      dataIndex: 'custom_string_8',
+      key: 'custom_string_8',
+      hidden: !visibleColumns.custom_string_8
+    },
+    {
+      title: getCustomFieldLabel('custom_string_9', currentWorkspace),
+      dataIndex: 'custom_string_9',
+      key: 'custom_string_9',
+      hidden: !visibleColumns.custom_string_9
+    },
+    {
+      title: getCustomFieldLabel('custom_string_10', currentWorkspace),
+      dataIndex: 'custom_string_10',
+      key: 'custom_string_10',
+      hidden: !visibleColumns.custom_string_10
+    },
+    {
+      title: getCustomFieldLabel('custom_string_11', currentWorkspace),
+      dataIndex: 'custom_string_11',
+      key: 'custom_string_11',
+      hidden: !visibleColumns.custom_string_11
+    },
+    {
+      title: getCustomFieldLabel('custom_string_12', currentWorkspace),
+      dataIndex: 'custom_string_12',
+      key: 'custom_string_12',
+      hidden: !visibleColumns.custom_string_12
+    },
+    {
+      title: getCustomFieldLabel('custom_string_13', currentWorkspace),
+      dataIndex: 'custom_string_13',
+      key: 'custom_string_13',
+      hidden: !visibleColumns.custom_string_13
+    },
+    {
+      title: getCustomFieldLabel('custom_string_14', currentWorkspace),
+      dataIndex: 'custom_string_14',
+      key: 'custom_string_14',
+      hidden: !visibleColumns.custom_string_14
+    },
+    {
+      title: getCustomFieldLabel('custom_string_15', currentWorkspace),
+      dataIndex: 'custom_string_15',
+      key: 'custom_string_15',
+      hidden: !visibleColumns.custom_string_15
+    },
+    {
       title: getCustomFieldLabel('custom_number_1', currentWorkspace),
       dataIndex: 'custom_number_1',
       key: 'custom_number_1',
@@ -641,6 +761,66 @@ export function ContactsPage() {
       dataIndex: 'custom_number_5',
       key: 'custom_number_5',
       hidden: !visibleColumns.custom_number_5
+    },
+    {
+      title: getCustomFieldLabel('custom_number_6', currentWorkspace),
+      dataIndex: 'custom_number_6',
+      key: 'custom_number_6',
+      hidden: !visibleColumns.custom_number_6
+    },
+    {
+      title: getCustomFieldLabel('custom_number_7', currentWorkspace),
+      dataIndex: 'custom_number_7',
+      key: 'custom_number_7',
+      hidden: !visibleColumns.custom_number_7
+    },
+    {
+      title: getCustomFieldLabel('custom_number_8', currentWorkspace),
+      dataIndex: 'custom_number_8',
+      key: 'custom_number_8',
+      hidden: !visibleColumns.custom_number_8
+    },
+    {
+      title: getCustomFieldLabel('custom_number_9', currentWorkspace),
+      dataIndex: 'custom_number_9',
+      key: 'custom_number_9',
+      hidden: !visibleColumns.custom_number_9
+    },
+    {
+      title: getCustomFieldLabel('custom_number_10', currentWorkspace),
+      dataIndex: 'custom_number_10',
+      key: 'custom_number_10',
+      hidden: !visibleColumns.custom_number_10
+    },
+    {
+      title: getCustomFieldLabel('custom_number_11', currentWorkspace),
+      dataIndex: 'custom_number_11',
+      key: 'custom_number_11',
+      hidden: !visibleColumns.custom_number_11
+    },
+    {
+      title: getCustomFieldLabel('custom_number_12', currentWorkspace),
+      dataIndex: 'custom_number_12',
+      key: 'custom_number_12',
+      hidden: !visibleColumns.custom_number_12
+    },
+    {
+      title: getCustomFieldLabel('custom_number_13', currentWorkspace),
+      dataIndex: 'custom_number_13',
+      key: 'custom_number_13',
+      hidden: !visibleColumns.custom_number_13
+    },
+    {
+      title: getCustomFieldLabel('custom_number_14', currentWorkspace),
+      dataIndex: 'custom_number_14',
+      key: 'custom_number_14',
+      hidden: !visibleColumns.custom_number_14
+    },
+    {
+      title: getCustomFieldLabel('custom_number_15', currentWorkspace),
+      dataIndex: 'custom_number_15',
+      key: 'custom_number_15',
+      hidden: !visibleColumns.custom_number_15
     },
     {
       title: getCustomFieldLabel('custom_datetime_1', currentWorkspace),
@@ -681,6 +861,86 @@ export function ContactsPage() {
       render: (_: unknown, record: Contact) =>
         record.custom_datetime_5 ? new Date(record.custom_datetime_5).toLocaleDateString() : '-',
       hidden: !visibleColumns.custom_datetime_5
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_6', currentWorkspace),
+      dataIndex: 'custom_datetime_6',
+      key: 'custom_datetime_6',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_6 ? new Date(record.custom_datetime_6).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_6
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_7', currentWorkspace),
+      dataIndex: 'custom_datetime_7',
+      key: 'custom_datetime_7',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_7 ? new Date(record.custom_datetime_7).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_7
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_8', currentWorkspace),
+      dataIndex: 'custom_datetime_8',
+      key: 'custom_datetime_8',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_8 ? new Date(record.custom_datetime_8).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_8
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_9', currentWorkspace),
+      dataIndex: 'custom_datetime_9',
+      key: 'custom_datetime_9',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_9 ? new Date(record.custom_datetime_9).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_9
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_10', currentWorkspace),
+      dataIndex: 'custom_datetime_10',
+      key: 'custom_datetime_10',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_10 ? new Date(record.custom_datetime_10).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_10
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_11', currentWorkspace),
+      dataIndex: 'custom_datetime_11',
+      key: 'custom_datetime_11',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_11 ? new Date(record.custom_datetime_11).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_11
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_12', currentWorkspace),
+      dataIndex: 'custom_datetime_12',
+      key: 'custom_datetime_12',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_12 ? new Date(record.custom_datetime_12).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_12
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_13', currentWorkspace),
+      dataIndex: 'custom_datetime_13',
+      key: 'custom_datetime_13',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_13 ? new Date(record.custom_datetime_13).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_13
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_14', currentWorkspace),
+      dataIndex: 'custom_datetime_14',
+      key: 'custom_datetime_14',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_14 ? new Date(record.custom_datetime_14).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_14
+    },
+    {
+      title: getCustomFieldLabel('custom_datetime_15', currentWorkspace),
+      dataIndex: 'custom_datetime_15',
+      key: 'custom_datetime_15',
+      render: (_: unknown, record: Contact) =>
+        record.custom_datetime_15 ? new Date(record.custom_datetime_15).toLocaleDateString() : '-',
+      hidden: !visibleColumns.custom_datetime_15
     },
     {
       title: getCustomFieldLabel('custom_json_1', currentWorkspace),

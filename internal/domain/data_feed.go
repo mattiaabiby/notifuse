@@ -244,25 +244,55 @@ type RecipientFeedContact struct {
 	JobTitle     string `json:"job_title,omitempty"`
 
 	// Custom string fields
-	CustomString1 string `json:"custom_string_1,omitempty"`
-	CustomString2 string `json:"custom_string_2,omitempty"`
-	CustomString3 string `json:"custom_string_3,omitempty"`
-	CustomString4 string `json:"custom_string_4,omitempty"`
-	CustomString5 string `json:"custom_string_5,omitempty"`
+	CustomString1  string `json:"custom_string_1,omitempty"`
+	CustomString2  string `json:"custom_string_2,omitempty"`
+	CustomString3  string `json:"custom_string_3,omitempty"`
+	CustomString4  string `json:"custom_string_4,omitempty"`
+	CustomString5  string `json:"custom_string_5,omitempty"`
+	CustomString6  string `json:"custom_string_6,omitempty"`
+	CustomString7  string `json:"custom_string_7,omitempty"`
+	CustomString8  string `json:"custom_string_8,omitempty"`
+	CustomString9  string `json:"custom_string_9,omitempty"`
+	CustomString10 string `json:"custom_string_10,omitempty"`
+	CustomString11 string `json:"custom_string_11,omitempty"`
+	CustomString12 string `json:"custom_string_12,omitempty"`
+	CustomString13 string `json:"custom_string_13,omitempty"`
+	CustomString14 string `json:"custom_string_14,omitempty"`
+	CustomString15 string `json:"custom_string_15,omitempty"`
 
 	// Custom number fields (using pointer for omitempty with 0 values)
-	CustomNumber1 *float64 `json:"custom_number_1,omitempty"`
-	CustomNumber2 *float64 `json:"custom_number_2,omitempty"`
-	CustomNumber3 *float64 `json:"custom_number_3,omitempty"`
-	CustomNumber4 *float64 `json:"custom_number_4,omitempty"`
-	CustomNumber5 *float64 `json:"custom_number_5,omitempty"`
+	CustomNumber1  *float64 `json:"custom_number_1,omitempty"`
+	CustomNumber2  *float64 `json:"custom_number_2,omitempty"`
+	CustomNumber3  *float64 `json:"custom_number_3,omitempty"`
+	CustomNumber4  *float64 `json:"custom_number_4,omitempty"`
+	CustomNumber5  *float64 `json:"custom_number_5,omitempty"`
+	CustomNumber6  *float64 `json:"custom_number_6,omitempty"`
+	CustomNumber7  *float64 `json:"custom_number_7,omitempty"`
+	CustomNumber8  *float64 `json:"custom_number_8,omitempty"`
+	CustomNumber9  *float64 `json:"custom_number_9,omitempty"`
+	CustomNumber10 *float64 `json:"custom_number_10,omitempty"`
+	CustomNumber11 *float64 `json:"custom_number_11,omitempty"`
+	CustomNumber12 *float64 `json:"custom_number_12,omitempty"`
+	CustomNumber13 *float64 `json:"custom_number_13,omitempty"`
+	CustomNumber14 *float64 `json:"custom_number_14,omitempty"`
+	CustomNumber15 *float64 `json:"custom_number_15,omitempty"`
 
 	// Custom datetime fields (RFC3339 format strings for JSON)
-	CustomDatetime1 *string `json:"custom_datetime_1,omitempty"`
-	CustomDatetime2 *string `json:"custom_datetime_2,omitempty"`
-	CustomDatetime3 *string `json:"custom_datetime_3,omitempty"`
-	CustomDatetime4 *string `json:"custom_datetime_4,omitempty"`
-	CustomDatetime5 *string `json:"custom_datetime_5,omitempty"`
+	CustomDatetime1  *string `json:"custom_datetime_1,omitempty"`
+	CustomDatetime2  *string `json:"custom_datetime_2,omitempty"`
+	CustomDatetime3  *string `json:"custom_datetime_3,omitempty"`
+	CustomDatetime4  *string `json:"custom_datetime_4,omitempty"`
+	CustomDatetime5  *string `json:"custom_datetime_5,omitempty"`
+	CustomDatetime6  *string `json:"custom_datetime_6,omitempty"`
+	CustomDatetime7  *string `json:"custom_datetime_7,omitempty"`
+	CustomDatetime8  *string `json:"custom_datetime_8,omitempty"`
+	CustomDatetime9  *string `json:"custom_datetime_9,omitempty"`
+	CustomDatetime10 *string `json:"custom_datetime_10,omitempty"`
+	CustomDatetime11 *string `json:"custom_datetime_11,omitempty"`
+	CustomDatetime12 *string `json:"custom_datetime_12,omitempty"`
+	CustomDatetime13 *string `json:"custom_datetime_13,omitempty"`
+	CustomDatetime14 *string `json:"custom_datetime_14,omitempty"`
+	CustomDatetime15 *string `json:"custom_datetime_15,omitempty"`
 
 	// Custom JSON fields
 	CustomJSON1 interface{} `json:"custom_json_1,omitempty"`

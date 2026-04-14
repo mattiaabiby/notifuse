@@ -107,20 +107,50 @@ export const ApiCommandModal: React.FC<ApiCommandModalProps> = ({
   custom_string_3?: string;
   custom_string_4?: string;
   custom_string_5?: string;
-  
+  custom_string_6?: string;
+  custom_string_7?: string;
+  custom_string_8?: string;
+  custom_string_9?: string;
+  custom_string_10?: string;
+  custom_string_11?: string;
+  custom_string_12?: string;
+  custom_string_13?: string;
+  custom_string_14?: string;
+  custom_string_15?: string;
+
   // Custom number fields
   custom_number_1?: number;
   custom_number_2?: number;
   custom_number_3?: number;
   custom_number_4?: number;
   custom_number_5?: number;
-  
+  custom_number_6?: number;
+  custom_number_7?: number;
+  custom_number_8?: number;
+  custom_number_9?: number;
+  custom_number_10?: number;
+  custom_number_11?: number;
+  custom_number_12?: number;
+  custom_number_13?: number;
+  custom_number_14?: number;
+  custom_number_15?: number;
+
   // Custom datetime fields
   custom_datetime_1?: string;
   custom_datetime_2?: string;
   custom_datetime_3?: string;
   custom_datetime_4?: string;
   custom_datetime_5?: string;
+  custom_datetime_6?: string;
+  custom_datetime_7?: string;
+  custom_datetime_8?: string;
+  custom_datetime_9?: string;
+  custom_datetime_10?: string;
+  custom_datetime_11?: string;
+  custom_datetime_12?: string;
+  custom_datetime_13?: string;
+  custom_datetime_14?: string;
+  custom_datetime_15?: string;
   
   // Custom JSON fields
   custom_json_1?: any;
@@ -340,23 +370,53 @@ type Contact struct {
     Postcode      string   \`json:"postcode,omitempty"\`
     State         string   \`json:"state,omitempty"\`
     JobTitle      string   \`json:"job_title,omitempty"\`
-    CustomString1 string   \`json:"custom_string_1,omitempty"\`
-    CustomString2 string   \`json:"custom_string_2,omitempty"\`
-    CustomString3 string   \`json:"custom_string_3,omitempty"\`
-    CustomString4 string   \`json:"custom_string_4,omitempty"\`
-    CustomString5 string   \`json:"custom_string_5,omitempty"\`
-    
-    CustomNumber1 *float64 \`json:"custom_number_1,omitempty"\`
-    CustomNumber2 *float64 \`json:"custom_number_2,omitempty"\`
-    CustomNumber3 *float64 \`json:"custom_number_3,omitempty"\`
-    CustomNumber4 *float64 \`json:"custom_number_4,omitempty"\`
-    CustomNumber5 *float64 \`json:"custom_number_5,omitempty"\`
-    
-    CustomDatetime1 *string \`json:"custom_datetime_1,omitempty"\`
-    CustomDatetime2 *string \`json:"custom_datetime_2,omitempty"\`
-    CustomDatetime3 *string \`json:"custom_datetime_3,omitempty"\`
-    CustomDatetime4 *string \`json:"custom_datetime_4,omitempty"\`
-    CustomDatetime5 *string \`json:"custom_datetime_5,omitempty"\`
+    CustomString1  string   \`json:"custom_string_1,omitempty"\`
+    CustomString2  string   \`json:"custom_string_2,omitempty"\`
+    CustomString3  string   \`json:"custom_string_3,omitempty"\`
+    CustomString4  string   \`json:"custom_string_4,omitempty"\`
+    CustomString5  string   \`json:"custom_string_5,omitempty"\`
+    CustomString6  string   \`json:"custom_string_6,omitempty"\`
+    CustomString7  string   \`json:"custom_string_7,omitempty"\`
+    CustomString8  string   \`json:"custom_string_8,omitempty"\`
+    CustomString9  string   \`json:"custom_string_9,omitempty"\`
+    CustomString10 string   \`json:"custom_string_10,omitempty"\`
+    CustomString11 string   \`json:"custom_string_11,omitempty"\`
+    CustomString12 string   \`json:"custom_string_12,omitempty"\`
+    CustomString13 string   \`json:"custom_string_13,omitempty"\`
+    CustomString14 string   \`json:"custom_string_14,omitempty"\`
+    CustomString15 string   \`json:"custom_string_15,omitempty"\`
+
+    CustomNumber1  *float64 \`json:"custom_number_1,omitempty"\`
+    CustomNumber2  *float64 \`json:"custom_number_2,omitempty"\`
+    CustomNumber3  *float64 \`json:"custom_number_3,omitempty"\`
+    CustomNumber4  *float64 \`json:"custom_number_4,omitempty"\`
+    CustomNumber5  *float64 \`json:"custom_number_5,omitempty"\`
+    CustomNumber6  *float64 \`json:"custom_number_6,omitempty"\`
+    CustomNumber7  *float64 \`json:"custom_number_7,omitempty"\`
+    CustomNumber8  *float64 \`json:"custom_number_8,omitempty"\`
+    CustomNumber9  *float64 \`json:"custom_number_9,omitempty"\`
+    CustomNumber10 *float64 \`json:"custom_number_10,omitempty"\`
+    CustomNumber11 *float64 \`json:"custom_number_11,omitempty"\`
+    CustomNumber12 *float64 \`json:"custom_number_12,omitempty"\`
+    CustomNumber13 *float64 \`json:"custom_number_13,omitempty"\`
+    CustomNumber14 *float64 \`json:"custom_number_14,omitempty"\`
+    CustomNumber15 *float64 \`json:"custom_number_15,omitempty"\`
+
+    CustomDatetime1  *string \`json:"custom_datetime_1,omitempty"\`
+    CustomDatetime2  *string \`json:"custom_datetime_2,omitempty"\`
+    CustomDatetime3  *string \`json:"custom_datetime_3,omitempty"\`
+    CustomDatetime4  *string \`json:"custom_datetime_4,omitempty"\`
+    CustomDatetime5  *string \`json:"custom_datetime_5,omitempty"\`
+    CustomDatetime6  *string \`json:"custom_datetime_6,omitempty"\`
+    CustomDatetime7  *string \`json:"custom_datetime_7,omitempty"\`
+    CustomDatetime8  *string \`json:"custom_datetime_8,omitempty"\`
+    CustomDatetime9  *string \`json:"custom_datetime_9,omitempty"\`
+    CustomDatetime10 *string \`json:"custom_datetime_10,omitempty"\`
+    CustomDatetime11 *string \`json:"custom_datetime_11,omitempty"\`
+    CustomDatetime12 *string \`json:"custom_datetime_12,omitempty"\`
+    CustomDatetime13 *string \`json:"custom_datetime_13,omitempty"\`
+    CustomDatetime14 *string \`json:"custom_datetime_14,omitempty"\`
+    CustomDatetime15 *string \`json:"custom_datetime_15,omitempty"\`
     
     CustomJSON1 interface{} \`json:"custom_json_1,omitempty"\`
     CustomJSON2 interface{} \`json:"custom_json_2,omitempty"\`
@@ -614,7 +674,27 @@ public class NotificationSender {
         public String customString4;
         @JsonProperty("custom_string_5")
         public String customString5;
-        
+        @JsonProperty("custom_string_6")
+        public String customString6;
+        @JsonProperty("custom_string_7")
+        public String customString7;
+        @JsonProperty("custom_string_8")
+        public String customString8;
+        @JsonProperty("custom_string_9")
+        public String customString9;
+        @JsonProperty("custom_string_10")
+        public String customString10;
+        @JsonProperty("custom_string_11")
+        public String customString11;
+        @JsonProperty("custom_string_12")
+        public String customString12;
+        @JsonProperty("custom_string_13")
+        public String customString13;
+        @JsonProperty("custom_string_14")
+        public String customString14;
+        @JsonProperty("custom_string_15")
+        public String customString15;
+
         // Custom number fields
         @JsonProperty("custom_number_1")
         public Double customNumber1;
@@ -626,7 +706,27 @@ public class NotificationSender {
         public Double customNumber4;
         @JsonProperty("custom_number_5")
         public Double customNumber5;
-        
+        @JsonProperty("custom_number_6")
+        public Double customNumber6;
+        @JsonProperty("custom_number_7")
+        public Double customNumber7;
+        @JsonProperty("custom_number_8")
+        public Double customNumber8;
+        @JsonProperty("custom_number_9")
+        public Double customNumber9;
+        @JsonProperty("custom_number_10")
+        public Double customNumber10;
+        @JsonProperty("custom_number_11")
+        public Double customNumber11;
+        @JsonProperty("custom_number_12")
+        public Double customNumber12;
+        @JsonProperty("custom_number_13")
+        public Double customNumber13;
+        @JsonProperty("custom_number_14")
+        public Double customNumber14;
+        @JsonProperty("custom_number_15")
+        public Double customNumber15;
+
         // Custom datetime fields
         @JsonProperty("custom_datetime_1")
         public String customDatetime1;
@@ -638,6 +738,26 @@ public class NotificationSender {
         public String customDatetime4;
         @JsonProperty("custom_datetime_5")
         public String customDatetime5;
+        @JsonProperty("custom_datetime_6")
+        public String customDatetime6;
+        @JsonProperty("custom_datetime_7")
+        public String customDatetime7;
+        @JsonProperty("custom_datetime_8")
+        public String customDatetime8;
+        @JsonProperty("custom_datetime_9")
+        public String customDatetime9;
+        @JsonProperty("custom_datetime_10")
+        public String customDatetime10;
+        @JsonProperty("custom_datetime_11")
+        public String customDatetime11;
+        @JsonProperty("custom_datetime_12")
+        public String customDatetime12;
+        @JsonProperty("custom_datetime_13")
+        public String customDatetime13;
+        @JsonProperty("custom_datetime_14")
+        public String customDatetime14;
+        @JsonProperty("custom_datetime_15")
+        public String customDatetime15;
         
         // Custom JSON fields
         @JsonProperty("custom_json_1")

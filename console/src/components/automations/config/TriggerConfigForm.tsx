@@ -130,7 +130,17 @@ export const TriggerConfigForm: React.FC<TriggerConfigFormProps> = ({ config, on
           { value: 'custom_string_2', label: getFieldLabel('custom_string_2', t`Custom String 2`, workspace?.settings?.custom_field_labels) },
           { value: 'custom_string_3', label: getFieldLabel('custom_string_3', t`Custom String 3`, workspace?.settings?.custom_field_labels) },
           { value: 'custom_string_4', label: getFieldLabel('custom_string_4', t`Custom String 4`, workspace?.settings?.custom_field_labels) },
-          { value: 'custom_string_5', label: getFieldLabel('custom_string_5', t`Custom String 5`, workspace?.settings?.custom_field_labels) }
+          { value: 'custom_string_5', label: getFieldLabel('custom_string_5', t`Custom String 5`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_6', label: getFieldLabel('custom_string_6', t`Custom String 6`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_7', label: getFieldLabel('custom_string_7', t`Custom String 7`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_8', label: getFieldLabel('custom_string_8', t`Custom String 8`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_9', label: getFieldLabel('custom_string_9', t`Custom String 9`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_10', label: getFieldLabel('custom_string_10', t`Custom String 10`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_11', label: getFieldLabel('custom_string_11', t`Custom String 11`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_12', label: getFieldLabel('custom_string_12', t`Custom String 12`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_13', label: getFieldLabel('custom_string_13', t`Custom String 13`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_14', label: getFieldLabel('custom_string_14', t`Custom String 14`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_string_15', label: getFieldLabel('custom_string_15', t`Custom String 15`, workspace?.settings?.custom_field_labels) }
         ]
       },
       {
@@ -140,7 +150,17 @@ export const TriggerConfigForm: React.FC<TriggerConfigFormProps> = ({ config, on
           { value: 'custom_number_2', label: getFieldLabel('custom_number_2', t`Custom Number 2`, workspace?.settings?.custom_field_labels) },
           { value: 'custom_number_3', label: getFieldLabel('custom_number_3', t`Custom Number 3`, workspace?.settings?.custom_field_labels) },
           { value: 'custom_number_4', label: getFieldLabel('custom_number_4', t`Custom Number 4`, workspace?.settings?.custom_field_labels) },
-          { value: 'custom_number_5', label: getFieldLabel('custom_number_5', t`Custom Number 5`, workspace?.settings?.custom_field_labels) }
+          { value: 'custom_number_5', label: getFieldLabel('custom_number_5', t`Custom Number 5`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_6', label: getFieldLabel('custom_number_6', t`Custom Number 6`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_7', label: getFieldLabel('custom_number_7', t`Custom Number 7`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_8', label: getFieldLabel('custom_number_8', t`Custom Number 8`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_9', label: getFieldLabel('custom_number_9', t`Custom Number 9`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_10', label: getFieldLabel('custom_number_10', t`Custom Number 10`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_11', label: getFieldLabel('custom_number_11', t`Custom Number 11`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_12', label: getFieldLabel('custom_number_12', t`Custom Number 12`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_13', label: getFieldLabel('custom_number_13', t`Custom Number 13`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_14', label: getFieldLabel('custom_number_14', t`Custom Number 14`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_number_15', label: getFieldLabel('custom_number_15', t`Custom Number 15`, workspace?.settings?.custom_field_labels) }
         ]
       },
       {
@@ -150,7 +170,17 @@ export const TriggerConfigForm: React.FC<TriggerConfigFormProps> = ({ config, on
           { value: 'custom_datetime_2', label: getFieldLabel('custom_datetime_2', t`Custom Date 2`, workspace?.settings?.custom_field_labels) },
           { value: 'custom_datetime_3', label: getFieldLabel('custom_datetime_3', t`Custom Date 3`, workspace?.settings?.custom_field_labels) },
           { value: 'custom_datetime_4', label: getFieldLabel('custom_datetime_4', t`Custom Date 4`, workspace?.settings?.custom_field_labels) },
-          { value: 'custom_datetime_5', label: getFieldLabel('custom_datetime_5', t`Custom Date 5`, workspace?.settings?.custom_field_labels) }
+          { value: 'custom_datetime_5', label: getFieldLabel('custom_datetime_5', t`Custom Date 5`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_6', label: getFieldLabel('custom_datetime_6', t`Custom Date 6`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_7', label: getFieldLabel('custom_datetime_7', t`Custom Date 7`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_8', label: getFieldLabel('custom_datetime_8', t`Custom Date 8`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_9', label: getFieldLabel('custom_datetime_9', t`Custom Date 9`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_10', label: getFieldLabel('custom_datetime_10', t`Custom Date 10`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_11', label: getFieldLabel('custom_datetime_11', t`Custom Date 11`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_12', label: getFieldLabel('custom_datetime_12', t`Custom Date 12`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_13', label: getFieldLabel('custom_datetime_13', t`Custom Date 13`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_14', label: getFieldLabel('custom_datetime_14', t`Custom Date 14`, workspace?.settings?.custom_field_labels) },
+          { value: 'custom_datetime_15', label: getFieldLabel('custom_datetime_15', t`Custom Date 15`, workspace?.settings?.custom_field_labels) }
         ]
       },
       {

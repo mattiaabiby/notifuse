@@ -167,16 +167,46 @@ const getOptionalFields = (workspace: Workspace) => [
   { key: 'custom_string_3', label: formatCustomFieldLabel('custom_string_3', workspace) },
   { key: 'custom_string_4', label: formatCustomFieldLabel('custom_string_4', workspace) },
   { key: 'custom_string_5', label: formatCustomFieldLabel('custom_string_5', workspace) },
+  { key: 'custom_string_6', label: formatCustomFieldLabel('custom_string_6', workspace) },
+  { key: 'custom_string_7', label: formatCustomFieldLabel('custom_string_7', workspace) },
+  { key: 'custom_string_8', label: formatCustomFieldLabel('custom_string_8', workspace) },
+  { key: 'custom_string_9', label: formatCustomFieldLabel('custom_string_9', workspace) },
+  { key: 'custom_string_10', label: formatCustomFieldLabel('custom_string_10', workspace) },
+  { key: 'custom_string_11', label: formatCustomFieldLabel('custom_string_11', workspace) },
+  { key: 'custom_string_12', label: formatCustomFieldLabel('custom_string_12', workspace) },
+  { key: 'custom_string_13', label: formatCustomFieldLabel('custom_string_13', workspace) },
+  { key: 'custom_string_14', label: formatCustomFieldLabel('custom_string_14', workspace) },
+  { key: 'custom_string_15', label: formatCustomFieldLabel('custom_string_15', workspace) },
   { key: 'custom_number_1', label: formatCustomFieldLabel('custom_number_1', workspace) },
   { key: 'custom_number_2', label: formatCustomFieldLabel('custom_number_2', workspace) },
   { key: 'custom_number_3', label: formatCustomFieldLabel('custom_number_3', workspace) },
   { key: 'custom_number_4', label: formatCustomFieldLabel('custom_number_4', workspace) },
   { key: 'custom_number_5', label: formatCustomFieldLabel('custom_number_5', workspace) },
+  { key: 'custom_number_6', label: formatCustomFieldLabel('custom_number_6', workspace) },
+  { key: 'custom_number_7', label: formatCustomFieldLabel('custom_number_7', workspace) },
+  { key: 'custom_number_8', label: formatCustomFieldLabel('custom_number_8', workspace) },
+  { key: 'custom_number_9', label: formatCustomFieldLabel('custom_number_9', workspace) },
+  { key: 'custom_number_10', label: formatCustomFieldLabel('custom_number_10', workspace) },
+  { key: 'custom_number_11', label: formatCustomFieldLabel('custom_number_11', workspace) },
+  { key: 'custom_number_12', label: formatCustomFieldLabel('custom_number_12', workspace) },
+  { key: 'custom_number_13', label: formatCustomFieldLabel('custom_number_13', workspace) },
+  { key: 'custom_number_14', label: formatCustomFieldLabel('custom_number_14', workspace) },
+  { key: 'custom_number_15', label: formatCustomFieldLabel('custom_number_15', workspace) },
   { key: 'custom_datetime_1', label: formatCustomFieldLabel('custom_datetime_1', workspace) },
   { key: 'custom_datetime_2', label: formatCustomFieldLabel('custom_datetime_2', workspace) },
   { key: 'custom_datetime_3', label: formatCustomFieldLabel('custom_datetime_3', workspace) },
   { key: 'custom_datetime_4', label: formatCustomFieldLabel('custom_datetime_4', workspace) },
   { key: 'custom_datetime_5', label: formatCustomFieldLabel('custom_datetime_5', workspace) },
+  { key: 'custom_datetime_6', label: formatCustomFieldLabel('custom_datetime_6', workspace) },
+  { key: 'custom_datetime_7', label: formatCustomFieldLabel('custom_datetime_7', workspace) },
+  { key: 'custom_datetime_8', label: formatCustomFieldLabel('custom_datetime_8', workspace) },
+  { key: 'custom_datetime_9', label: formatCustomFieldLabel('custom_datetime_9', workspace) },
+  { key: 'custom_datetime_10', label: formatCustomFieldLabel('custom_datetime_10', workspace) },
+  { key: 'custom_datetime_11', label: formatCustomFieldLabel('custom_datetime_11', workspace) },
+  { key: 'custom_datetime_12', label: formatCustomFieldLabel('custom_datetime_12', workspace) },
+  { key: 'custom_datetime_13', label: formatCustomFieldLabel('custom_datetime_13', workspace) },
+  { key: 'custom_datetime_14', label: formatCustomFieldLabel('custom_datetime_14', workspace) },
+  { key: 'custom_datetime_15', label: formatCustomFieldLabel('custom_datetime_15', workspace) },
   { key: 'custom_json_1', label: formatCustomFieldLabel('custom_json_1', workspace), type: 'json' },
   { key: 'custom_json_2', label: formatCustomFieldLabel('custom_json_2', workspace), type: 'json' },
   { key: 'custom_json_3', label: formatCustomFieldLabel('custom_json_3', workspace), type: 'json' },
@@ -405,7 +435,17 @@ export function ContactUpsertDrawer({
       field === 'custom_number_2' ||
       field === 'custom_number_3' ||
       field === 'custom_number_4' ||
-      field === 'custom_number_5'
+      field === 'custom_number_5' ||
+      field === 'custom_number_6' ||
+      field === 'custom_number_7' ||
+      field === 'custom_number_8' ||
+      field === 'custom_number_9' ||
+      field === 'custom_number_10' ||
+      field === 'custom_number_11' ||
+      field === 'custom_number_12' ||
+      field === 'custom_number_13' ||
+      field === 'custom_number_14' ||
+      field === 'custom_number_15'
     ) {
       return (
         <NullableInputNumber name={field} nullLabel={t`Null`} placeholder={t`Enter ${fieldInfo.label.toLowerCase()}`} />
@@ -417,7 +457,17 @@ export function ContactUpsertDrawer({
       field === 'custom_datetime_2' ||
       field === 'custom_datetime_3' ||
       field === 'custom_datetime_4' ||
-      field === 'custom_datetime_5'
+      field === 'custom_datetime_5' ||
+      field === 'custom_datetime_6' ||
+      field === 'custom_datetime_7' ||
+      field === 'custom_datetime_8' ||
+      field === 'custom_datetime_9' ||
+      field === 'custom_datetime_10' ||
+      field === 'custom_datetime_11' ||
+      field === 'custom_datetime_12' ||
+      field === 'custom_datetime_13' ||
+      field === 'custom_datetime_14' ||
+      field === 'custom_datetime_15'
     ) {
       return <NullableDatePicker name={field} nullLabel={t`Null`} showTime format="YYYY-MM-DD HH:mm:ss" />
     }

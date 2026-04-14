@@ -476,6 +476,56 @@ export function ContactDetailsDrawer({
       ...getFieldLabel('custom_string_5'),
       value: contact?.custom_string_5
     },
+    {
+      key: 'custom_string_6',
+      ...getFieldLabel('custom_string_6'),
+      value: contact?.custom_string_6
+    },
+    {
+      key: 'custom_string_7',
+      ...getFieldLabel('custom_string_7'),
+      value: contact?.custom_string_7
+    },
+    {
+      key: 'custom_string_8',
+      ...getFieldLabel('custom_string_8'),
+      value: contact?.custom_string_8
+    },
+    {
+      key: 'custom_string_9',
+      ...getFieldLabel('custom_string_9'),
+      value: contact?.custom_string_9
+    },
+    {
+      key: 'custom_string_10',
+      ...getFieldLabel('custom_string_10'),
+      value: contact?.custom_string_10
+    },
+    {
+      key: 'custom_string_11',
+      ...getFieldLabel('custom_string_11'),
+      value: contact?.custom_string_11
+    },
+    {
+      key: 'custom_string_12',
+      ...getFieldLabel('custom_string_12'),
+      value: contact?.custom_string_12
+    },
+    {
+      key: 'custom_string_13',
+      ...getFieldLabel('custom_string_13'),
+      value: contact?.custom_string_13
+    },
+    {
+      key: 'custom_string_14',
+      ...getFieldLabel('custom_string_14'),
+      value: contact?.custom_string_14
+    },
+    {
+      key: 'custom_string_15',
+      ...getFieldLabel('custom_string_15'),
+      value: contact?.custom_string_15
+    },
     // Custom number fields
     {
       key: 'custom_number_1',
@@ -502,6 +552,56 @@ export function ContactDetailsDrawer({
       ...getFieldLabel('custom_number_5'),
       value: contact?.custom_number_5
     },
+    {
+      key: 'custom_number_6',
+      ...getFieldLabel('custom_number_6'),
+      value: contact?.custom_number_6
+    },
+    {
+      key: 'custom_number_7',
+      ...getFieldLabel('custom_number_7'),
+      value: contact?.custom_number_7
+    },
+    {
+      key: 'custom_number_8',
+      ...getFieldLabel('custom_number_8'),
+      value: contact?.custom_number_8
+    },
+    {
+      key: 'custom_number_9',
+      ...getFieldLabel('custom_number_9'),
+      value: contact?.custom_number_9
+    },
+    {
+      key: 'custom_number_10',
+      ...getFieldLabel('custom_number_10'),
+      value: contact?.custom_number_10
+    },
+    {
+      key: 'custom_number_11',
+      ...getFieldLabel('custom_number_11'),
+      value: contact?.custom_number_11
+    },
+    {
+      key: 'custom_number_12',
+      ...getFieldLabel('custom_number_12'),
+      value: contact?.custom_number_12
+    },
+    {
+      key: 'custom_number_13',
+      ...getFieldLabel('custom_number_13'),
+      value: contact?.custom_number_13
+    },
+    {
+      key: 'custom_number_14',
+      ...getFieldLabel('custom_number_14'),
+      value: contact?.custom_number_14
+    },
+    {
+      key: 'custom_number_15',
+      ...getFieldLabel('custom_number_15'),
+      value: contact?.custom_number_15
+    },
     // Custom datetime fields (pass raw value, InlineEditableField will format)
     {
       key: 'custom_datetime_1',
@@ -527,6 +627,56 @@ export function ContactDetailsDrawer({
       key: 'custom_datetime_5',
       ...getFieldLabel('custom_datetime_5'),
       value: contact?.custom_datetime_5
+    },
+    {
+      key: 'custom_datetime_6',
+      ...getFieldLabel('custom_datetime_6'),
+      value: contact?.custom_datetime_6
+    },
+    {
+      key: 'custom_datetime_7',
+      ...getFieldLabel('custom_datetime_7'),
+      value: contact?.custom_datetime_7
+    },
+    {
+      key: 'custom_datetime_8',
+      ...getFieldLabel('custom_datetime_8'),
+      value: contact?.custom_datetime_8
+    },
+    {
+      key: 'custom_datetime_9',
+      ...getFieldLabel('custom_datetime_9'),
+      value: contact?.custom_datetime_9
+    },
+    {
+      key: 'custom_datetime_10',
+      ...getFieldLabel('custom_datetime_10'),
+      value: contact?.custom_datetime_10
+    },
+    {
+      key: 'custom_datetime_11',
+      ...getFieldLabel('custom_datetime_11'),
+      value: contact?.custom_datetime_11
+    },
+    {
+      key: 'custom_datetime_12',
+      ...getFieldLabel('custom_datetime_12'),
+      value: contact?.custom_datetime_12
+    },
+    {
+      key: 'custom_datetime_13',
+      ...getFieldLabel('custom_datetime_13'),
+      value: contact?.custom_datetime_13
+    },
+    {
+      key: 'custom_datetime_14',
+      ...getFieldLabel('custom_datetime_14'),
+      value: contact?.custom_datetime_14
+    },
+    {
+      key: 'custom_datetime_15',
+      ...getFieldLabel('custom_datetime_15'),
+      value: contact?.custom_datetime_15
     }
   ]
 

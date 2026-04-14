@@ -92,16 +92,46 @@ func InitializeWorkspaceDatabase(db *sql.DB) error {
 			custom_string_3 VARCHAR(255),
 			custom_string_4 VARCHAR(255),
 			custom_string_5 VARCHAR(255),
+			custom_string_6 TEXT,
+			custom_string_7 TEXT,
+			custom_string_8 TEXT,
+			custom_string_9 TEXT,
+			custom_string_10 TEXT,
+			custom_string_11 TEXT,
+			custom_string_12 TEXT,
+			custom_string_13 TEXT,
+			custom_string_14 TEXT,
+			custom_string_15 TEXT,
 			custom_number_1 DECIMAL,
 			custom_number_2 DECIMAL,
 			custom_number_3 DECIMAL,
 			custom_number_4 DECIMAL,
 			custom_number_5 DECIMAL,
+			custom_number_6 DOUBLE PRECISION,
+			custom_number_7 DOUBLE PRECISION,
+			custom_number_8 DOUBLE PRECISION,
+			custom_number_9 DOUBLE PRECISION,
+			custom_number_10 DOUBLE PRECISION,
+			custom_number_11 DOUBLE PRECISION,
+			custom_number_12 DOUBLE PRECISION,
+			custom_number_13 DOUBLE PRECISION,
+			custom_number_14 DOUBLE PRECISION,
+			custom_number_15 DOUBLE PRECISION,
 			custom_datetime_1 TIMESTAMP WITH TIME ZONE,
 			custom_datetime_2 TIMESTAMP WITH TIME ZONE,
 			custom_datetime_3 TIMESTAMP WITH TIME ZONE,
 			custom_datetime_4 TIMESTAMP WITH TIME ZONE,
 			custom_datetime_5 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_6 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_7 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_8 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_9 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_10 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_11 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_12 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_13 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_14 TIMESTAMP WITH TIME ZONE,
+			custom_datetime_15 TIMESTAMP WITH TIME ZONE,
 			custom_json_1 JSONB,
 			custom_json_2 JSONB,
 			custom_json_3 JSONB,
@@ -513,16 +543,46 @@ func InitializeWorkspaceDatabase(db *sql.DB) error {
 				IF OLD.custom_string_3 IS DISTINCT FROM NEW.custom_string_3 THEN changes_json := changes_json || jsonb_build_object('custom_string_3', jsonb_build_object('old', OLD.custom_string_3, 'new', NEW.custom_string_3)); END IF;
 				IF OLD.custom_string_4 IS DISTINCT FROM NEW.custom_string_4 THEN changes_json := changes_json || jsonb_build_object('custom_string_4', jsonb_build_object('old', OLD.custom_string_4, 'new', NEW.custom_string_4)); END IF;
 				IF OLD.custom_string_5 IS DISTINCT FROM NEW.custom_string_5 THEN changes_json := changes_json || jsonb_build_object('custom_string_5', jsonb_build_object('old', OLD.custom_string_5, 'new', NEW.custom_string_5)); END IF;
+				IF OLD.custom_string_6 IS DISTINCT FROM NEW.custom_string_6 THEN changes_json := changes_json || jsonb_build_object('custom_string_6', jsonb_build_object('old', OLD.custom_string_6, 'new', NEW.custom_string_6)); END IF;
+				IF OLD.custom_string_7 IS DISTINCT FROM NEW.custom_string_7 THEN changes_json := changes_json || jsonb_build_object('custom_string_7', jsonb_build_object('old', OLD.custom_string_7, 'new', NEW.custom_string_7)); END IF;
+				IF OLD.custom_string_8 IS DISTINCT FROM NEW.custom_string_8 THEN changes_json := changes_json || jsonb_build_object('custom_string_8', jsonb_build_object('old', OLD.custom_string_8, 'new', NEW.custom_string_8)); END IF;
+				IF OLD.custom_string_9 IS DISTINCT FROM NEW.custom_string_9 THEN changes_json := changes_json || jsonb_build_object('custom_string_9', jsonb_build_object('old', OLD.custom_string_9, 'new', NEW.custom_string_9)); END IF;
+				IF OLD.custom_string_10 IS DISTINCT FROM NEW.custom_string_10 THEN changes_json := changes_json || jsonb_build_object('custom_string_10', jsonb_build_object('old', OLD.custom_string_10, 'new', NEW.custom_string_10)); END IF;
+				IF OLD.custom_string_11 IS DISTINCT FROM NEW.custom_string_11 THEN changes_json := changes_json || jsonb_build_object('custom_string_11', jsonb_build_object('old', OLD.custom_string_11, 'new', NEW.custom_string_11)); END IF;
+				IF OLD.custom_string_12 IS DISTINCT FROM NEW.custom_string_12 THEN changes_json := changes_json || jsonb_build_object('custom_string_12', jsonb_build_object('old', OLD.custom_string_12, 'new', NEW.custom_string_12)); END IF;
+				IF OLD.custom_string_13 IS DISTINCT FROM NEW.custom_string_13 THEN changes_json := changes_json || jsonb_build_object('custom_string_13', jsonb_build_object('old', OLD.custom_string_13, 'new', NEW.custom_string_13)); END IF;
+				IF OLD.custom_string_14 IS DISTINCT FROM NEW.custom_string_14 THEN changes_json := changes_json || jsonb_build_object('custom_string_14', jsonb_build_object('old', OLD.custom_string_14, 'new', NEW.custom_string_14)); END IF;
+				IF OLD.custom_string_15 IS DISTINCT FROM NEW.custom_string_15 THEN changes_json := changes_json || jsonb_build_object('custom_string_15', jsonb_build_object('old', OLD.custom_string_15, 'new', NEW.custom_string_15)); END IF;
 				IF OLD.custom_number_1 IS DISTINCT FROM NEW.custom_number_1 THEN changes_json := changes_json || jsonb_build_object('custom_number_1', jsonb_build_object('old', OLD.custom_number_1, 'new', NEW.custom_number_1)); END IF;
 				IF OLD.custom_number_2 IS DISTINCT FROM NEW.custom_number_2 THEN changes_json := changes_json || jsonb_build_object('custom_number_2', jsonb_build_object('old', OLD.custom_number_2, 'new', NEW.custom_number_2)); END IF;
 				IF OLD.custom_number_3 IS DISTINCT FROM NEW.custom_number_3 THEN changes_json := changes_json || jsonb_build_object('custom_number_3', jsonb_build_object('old', OLD.custom_number_3, 'new', NEW.custom_number_3)); END IF;
 				IF OLD.custom_number_4 IS DISTINCT FROM NEW.custom_number_4 THEN changes_json := changes_json || jsonb_build_object('custom_number_4', jsonb_build_object('old', OLD.custom_number_4, 'new', NEW.custom_number_4)); END IF;
 				IF OLD.custom_number_5 IS DISTINCT FROM NEW.custom_number_5 THEN changes_json := changes_json || jsonb_build_object('custom_number_5', jsonb_build_object('old', OLD.custom_number_5, 'new', NEW.custom_number_5)); END IF;
+				IF OLD.custom_number_6 IS DISTINCT FROM NEW.custom_number_6 THEN changes_json := changes_json || jsonb_build_object('custom_number_6', jsonb_build_object('old', OLD.custom_number_6, 'new', NEW.custom_number_6)); END IF;
+				IF OLD.custom_number_7 IS DISTINCT FROM NEW.custom_number_7 THEN changes_json := changes_json || jsonb_build_object('custom_number_7', jsonb_build_object('old', OLD.custom_number_7, 'new', NEW.custom_number_7)); END IF;
+				IF OLD.custom_number_8 IS DISTINCT FROM NEW.custom_number_8 THEN changes_json := changes_json || jsonb_build_object('custom_number_8', jsonb_build_object('old', OLD.custom_number_8, 'new', NEW.custom_number_8)); END IF;
+				IF OLD.custom_number_9 IS DISTINCT FROM NEW.custom_number_9 THEN changes_json := changes_json || jsonb_build_object('custom_number_9', jsonb_build_object('old', OLD.custom_number_9, 'new', NEW.custom_number_9)); END IF;
+				IF OLD.custom_number_10 IS DISTINCT FROM NEW.custom_number_10 THEN changes_json := changes_json || jsonb_build_object('custom_number_10', jsonb_build_object('old', OLD.custom_number_10, 'new', NEW.custom_number_10)); END IF;
+				IF OLD.custom_number_11 IS DISTINCT FROM NEW.custom_number_11 THEN changes_json := changes_json || jsonb_build_object('custom_number_11', jsonb_build_object('old', OLD.custom_number_11, 'new', NEW.custom_number_11)); END IF;
+				IF OLD.custom_number_12 IS DISTINCT FROM NEW.custom_number_12 THEN changes_json := changes_json || jsonb_build_object('custom_number_12', jsonb_build_object('old', OLD.custom_number_12, 'new', NEW.custom_number_12)); END IF;
+				IF OLD.custom_number_13 IS DISTINCT FROM NEW.custom_number_13 THEN changes_json := changes_json || jsonb_build_object('custom_number_13', jsonb_build_object('old', OLD.custom_number_13, 'new', NEW.custom_number_13)); END IF;
+				IF OLD.custom_number_14 IS DISTINCT FROM NEW.custom_number_14 THEN changes_json := changes_json || jsonb_build_object('custom_number_14', jsonb_build_object('old', OLD.custom_number_14, 'new', NEW.custom_number_14)); END IF;
+				IF OLD.custom_number_15 IS DISTINCT FROM NEW.custom_number_15 THEN changes_json := changes_json || jsonb_build_object('custom_number_15', jsonb_build_object('old', OLD.custom_number_15, 'new', NEW.custom_number_15)); END IF;
 				IF OLD.custom_datetime_1 IS DISTINCT FROM NEW.custom_datetime_1 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_1', jsonb_build_object('old', OLD.custom_datetime_1, 'new', NEW.custom_datetime_1)); END IF;
 				IF OLD.custom_datetime_2 IS DISTINCT FROM NEW.custom_datetime_2 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_2', jsonb_build_object('old', OLD.custom_datetime_2, 'new', NEW.custom_datetime_2)); END IF;
 				IF OLD.custom_datetime_3 IS DISTINCT FROM NEW.custom_datetime_3 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_3', jsonb_build_object('old', OLD.custom_datetime_3, 'new', NEW.custom_datetime_3)); END IF;
 				IF OLD.custom_datetime_4 IS DISTINCT FROM NEW.custom_datetime_4 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_4', jsonb_build_object('old', OLD.custom_datetime_4, 'new', NEW.custom_datetime_4)); END IF;
 				IF OLD.custom_datetime_5 IS DISTINCT FROM NEW.custom_datetime_5 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_5', jsonb_build_object('old', OLD.custom_datetime_5, 'new', NEW.custom_datetime_5)); END IF;
+				IF OLD.custom_datetime_6 IS DISTINCT FROM NEW.custom_datetime_6 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_6', jsonb_build_object('old', OLD.custom_datetime_6, 'new', NEW.custom_datetime_6)); END IF;
+				IF OLD.custom_datetime_7 IS DISTINCT FROM NEW.custom_datetime_7 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_7', jsonb_build_object('old', OLD.custom_datetime_7, 'new', NEW.custom_datetime_7)); END IF;
+				IF OLD.custom_datetime_8 IS DISTINCT FROM NEW.custom_datetime_8 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_8', jsonb_build_object('old', OLD.custom_datetime_8, 'new', NEW.custom_datetime_8)); END IF;
+				IF OLD.custom_datetime_9 IS DISTINCT FROM NEW.custom_datetime_9 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_9', jsonb_build_object('old', OLD.custom_datetime_9, 'new', NEW.custom_datetime_9)); END IF;
+				IF OLD.custom_datetime_10 IS DISTINCT FROM NEW.custom_datetime_10 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_10', jsonb_build_object('old', OLD.custom_datetime_10, 'new', NEW.custom_datetime_10)); END IF;
+				IF OLD.custom_datetime_11 IS DISTINCT FROM NEW.custom_datetime_11 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_11', jsonb_build_object('old', OLD.custom_datetime_11, 'new', NEW.custom_datetime_11)); END IF;
+				IF OLD.custom_datetime_12 IS DISTINCT FROM NEW.custom_datetime_12 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_12', jsonb_build_object('old', OLD.custom_datetime_12, 'new', NEW.custom_datetime_12)); END IF;
+				IF OLD.custom_datetime_13 IS DISTINCT FROM NEW.custom_datetime_13 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_13', jsonb_build_object('old', OLD.custom_datetime_13, 'new', NEW.custom_datetime_13)); END IF;
+				IF OLD.custom_datetime_14 IS DISTINCT FROM NEW.custom_datetime_14 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_14', jsonb_build_object('old', OLD.custom_datetime_14, 'new', NEW.custom_datetime_14)); END IF;
+				IF OLD.custom_datetime_15 IS DISTINCT FROM NEW.custom_datetime_15 THEN changes_json := changes_json || jsonb_build_object('custom_datetime_15', jsonb_build_object('old', OLD.custom_datetime_15, 'new', NEW.custom_datetime_15)); END IF;
 				IF OLD.custom_json_1 IS DISTINCT FROM NEW.custom_json_1 THEN changes_json := changes_json || jsonb_build_object('custom_json_1', jsonb_build_object('old', OLD.custom_json_1, 'new', NEW.custom_json_1)); END IF;
 				IF OLD.custom_json_2 IS DISTINCT FROM NEW.custom_json_2 THEN changes_json := changes_json || jsonb_build_object('custom_json_2', jsonb_build_object('old', OLD.custom_json_2, 'new', NEW.custom_json_2)); END IF;
 				IF OLD.custom_json_3 IS DISTINCT FROM NEW.custom_json_3 THEN changes_json := changes_json || jsonb_build_object('custom_json_3', jsonb_build_object('old', OLD.custom_json_3, 'new', NEW.custom_json_3)); END IF;
@@ -874,16 +934,46 @@ func InitializeWorkspaceDatabase(db *sql.DB) error {
 				   NEW.custom_string_3 IS NOT DISTINCT FROM OLD.custom_string_3 AND
 				   NEW.custom_string_4 IS NOT DISTINCT FROM OLD.custom_string_4 AND
 				   NEW.custom_string_5 IS NOT DISTINCT FROM OLD.custom_string_5 AND
+				   NEW.custom_string_6 IS NOT DISTINCT FROM OLD.custom_string_6 AND
+				   NEW.custom_string_7 IS NOT DISTINCT FROM OLD.custom_string_7 AND
+				   NEW.custom_string_8 IS NOT DISTINCT FROM OLD.custom_string_8 AND
+				   NEW.custom_string_9 IS NOT DISTINCT FROM OLD.custom_string_9 AND
+				   NEW.custom_string_10 IS NOT DISTINCT FROM OLD.custom_string_10 AND
+				   NEW.custom_string_11 IS NOT DISTINCT FROM OLD.custom_string_11 AND
+				   NEW.custom_string_12 IS NOT DISTINCT FROM OLD.custom_string_12 AND
+				   NEW.custom_string_13 IS NOT DISTINCT FROM OLD.custom_string_13 AND
+				   NEW.custom_string_14 IS NOT DISTINCT FROM OLD.custom_string_14 AND
+				   NEW.custom_string_15 IS NOT DISTINCT FROM OLD.custom_string_15 AND
 				   NEW.custom_number_1 IS NOT DISTINCT FROM OLD.custom_number_1 AND
 				   NEW.custom_number_2 IS NOT DISTINCT FROM OLD.custom_number_2 AND
 				   NEW.custom_number_3 IS NOT DISTINCT FROM OLD.custom_number_3 AND
 				   NEW.custom_number_4 IS NOT DISTINCT FROM OLD.custom_number_4 AND
 				   NEW.custom_number_5 IS NOT DISTINCT FROM OLD.custom_number_5 AND
+				   NEW.custom_number_6 IS NOT DISTINCT FROM OLD.custom_number_6 AND
+				   NEW.custom_number_7 IS NOT DISTINCT FROM OLD.custom_number_7 AND
+				   NEW.custom_number_8 IS NOT DISTINCT FROM OLD.custom_number_8 AND
+				   NEW.custom_number_9 IS NOT DISTINCT FROM OLD.custom_number_9 AND
+				   NEW.custom_number_10 IS NOT DISTINCT FROM OLD.custom_number_10 AND
+				   NEW.custom_number_11 IS NOT DISTINCT FROM OLD.custom_number_11 AND
+				   NEW.custom_number_12 IS NOT DISTINCT FROM OLD.custom_number_12 AND
+				   NEW.custom_number_13 IS NOT DISTINCT FROM OLD.custom_number_13 AND
+				   NEW.custom_number_14 IS NOT DISTINCT FROM OLD.custom_number_14 AND
+				   NEW.custom_number_15 IS NOT DISTINCT FROM OLD.custom_number_15 AND
 				   NEW.custom_datetime_1 IS NOT DISTINCT FROM OLD.custom_datetime_1 AND
 				   NEW.custom_datetime_2 IS NOT DISTINCT FROM OLD.custom_datetime_2 AND
 				   NEW.custom_datetime_3 IS NOT DISTINCT FROM OLD.custom_datetime_3 AND
 				   NEW.custom_datetime_4 IS NOT DISTINCT FROM OLD.custom_datetime_4 AND
 				   NEW.custom_datetime_5 IS NOT DISTINCT FROM OLD.custom_datetime_5 AND
+				   NEW.custom_datetime_6 IS NOT DISTINCT FROM OLD.custom_datetime_6 AND
+				   NEW.custom_datetime_7 IS NOT DISTINCT FROM OLD.custom_datetime_7 AND
+				   NEW.custom_datetime_8 IS NOT DISTINCT FROM OLD.custom_datetime_8 AND
+				   NEW.custom_datetime_9 IS NOT DISTINCT FROM OLD.custom_datetime_9 AND
+				   NEW.custom_datetime_10 IS NOT DISTINCT FROM OLD.custom_datetime_10 AND
+				   NEW.custom_datetime_11 IS NOT DISTINCT FROM OLD.custom_datetime_11 AND
+				   NEW.custom_datetime_12 IS NOT DISTINCT FROM OLD.custom_datetime_12 AND
+				   NEW.custom_datetime_13 IS NOT DISTINCT FROM OLD.custom_datetime_13 AND
+				   NEW.custom_datetime_14 IS NOT DISTINCT FROM OLD.custom_datetime_14 AND
+				   NEW.custom_datetime_15 IS NOT DISTINCT FROM OLD.custom_datetime_15 AND
 				   NEW.custom_json_1 IS NOT DISTINCT FROM OLD.custom_json_1 AND
 				   NEW.custom_json_2 IS NOT DISTINCT FROM OLD.custom_json_2 AND
 				   NEW.custom_json_3 IS NOT DISTINCT FROM OLD.custom_json_3 AND
