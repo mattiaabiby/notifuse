@@ -1951,19 +1951,32 @@ func (r *contactRepository) GetContactsForBroadcast(
 			var firstName, lastName, fullName, phone, addressLine1, addressLine2 sql.NullString
 			var country, postcode, state, jobTitle sql.NullString
 			var customString1, customString2, customString3, customString4, customString5 sql.NullString
+			var customString6, customString7, customString8, customString9, customString10 sql.NullString
+			var customString11, customString12, customString13, customString14, customString15 sql.NullString
 			var customNumber1, customNumber2, customNumber3, customNumber4, customNumber5 sql.NullFloat64
+			var customNumber6, customNumber7, customNumber8, customNumber9, customNumber10 sql.NullFloat64
+			var customNumber11, customNumber12, customNumber13, customNumber14, customNumber15 sql.NullFloat64
 			var customDatetime1, customDatetime2, customDatetime3, customDatetime4, customDatetime5 sql.NullTime
+			var customDatetime6, customDatetime7, customDatetime8, customDatetime9, customDatetime10 sql.NullTime
+			var customDatetime11, customDatetime12, customDatetime13, customDatetime14, customDatetime15 sql.NullTime
 			var customJSON1, customJSON2, customJSON3, customJSON4, customJSON5 sql.NullString
 			var createdAt, updatedAt, dbCreatedAt, dbUpdatedAt time.Time
 
 			// Scan all columns including contact fields + list_id + list_name
+			// Column order must match contactColumns in contact_postgres.go
 			scanErr = rows.Scan(
 				&email, &externalID, &timezone, &language,
 				&firstName, &lastName, &fullName, &phone, &addressLine1, &addressLine2,
 				&country, &postcode, &state, &jobTitle,
 				&customString1, &customString2, &customString3, &customString4, &customString5,
+				&customString6, &customString7, &customString8, &customString9, &customString10,
+				&customString11, &customString12, &customString13, &customString14, &customString15,
 				&customNumber1, &customNumber2, &customNumber3, &customNumber4, &customNumber5,
+				&customNumber6, &customNumber7, &customNumber8, &customNumber9, &customNumber10,
+				&customNumber11, &customNumber12, &customNumber13, &customNumber14, &customNumber15,
 				&customDatetime1, &customDatetime2, &customDatetime3, &customDatetime4, &customDatetime5,
+				&customDatetime6, &customDatetime7, &customDatetime8, &customDatetime9, &customDatetime10,
+				&customDatetime11, &customDatetime12, &customDatetime13, &customDatetime14, &customDatetime15,
 				&customJSON1, &customJSON2, &customJSON3, &customJSON4, &customJSON5,
 				&createdAt, &updatedAt, &dbCreatedAt, &dbUpdatedAt,
 				&listID, &listName, // Additional columns
@@ -2037,6 +2050,36 @@ func (r *contactRepository) GetContactsForBroadcast(
 			if customString5.Valid {
 				contact.CustomString5 = &domain.NullableString{String: customString5.String, IsNull: false}
 			}
+			if customString6.Valid {
+				contact.CustomString6 = &domain.NullableString{String: customString6.String, IsNull: false}
+			}
+			if customString7.Valid {
+				contact.CustomString7 = &domain.NullableString{String: customString7.String, IsNull: false}
+			}
+			if customString8.Valid {
+				contact.CustomString8 = &domain.NullableString{String: customString8.String, IsNull: false}
+			}
+			if customString9.Valid {
+				contact.CustomString9 = &domain.NullableString{String: customString9.String, IsNull: false}
+			}
+			if customString10.Valid {
+				contact.CustomString10 = &domain.NullableString{String: customString10.String, IsNull: false}
+			}
+			if customString11.Valid {
+				contact.CustomString11 = &domain.NullableString{String: customString11.String, IsNull: false}
+			}
+			if customString12.Valid {
+				contact.CustomString12 = &domain.NullableString{String: customString12.String, IsNull: false}
+			}
+			if customString13.Valid {
+				contact.CustomString13 = &domain.NullableString{String: customString13.String, IsNull: false}
+			}
+			if customString14.Valid {
+				contact.CustomString14 = &domain.NullableString{String: customString14.String, IsNull: false}
+			}
+			if customString15.Valid {
+				contact.CustomString15 = &domain.NullableString{String: customString15.String, IsNull: false}
+			}
 			if customNumber1.Valid {
 				contact.CustomNumber1 = &domain.NullableFloat64{Float64: customNumber1.Float64, IsNull: false}
 			}
@@ -2052,6 +2095,36 @@ func (r *contactRepository) GetContactsForBroadcast(
 			if customNumber5.Valid {
 				contact.CustomNumber5 = &domain.NullableFloat64{Float64: customNumber5.Float64, IsNull: false}
 			}
+			if customNumber6.Valid {
+				contact.CustomNumber6 = &domain.NullableFloat64{Float64: customNumber6.Float64, IsNull: false}
+			}
+			if customNumber7.Valid {
+				contact.CustomNumber7 = &domain.NullableFloat64{Float64: customNumber7.Float64, IsNull: false}
+			}
+			if customNumber8.Valid {
+				contact.CustomNumber8 = &domain.NullableFloat64{Float64: customNumber8.Float64, IsNull: false}
+			}
+			if customNumber9.Valid {
+				contact.CustomNumber9 = &domain.NullableFloat64{Float64: customNumber9.Float64, IsNull: false}
+			}
+			if customNumber10.Valid {
+				contact.CustomNumber10 = &domain.NullableFloat64{Float64: customNumber10.Float64, IsNull: false}
+			}
+			if customNumber11.Valid {
+				contact.CustomNumber11 = &domain.NullableFloat64{Float64: customNumber11.Float64, IsNull: false}
+			}
+			if customNumber12.Valid {
+				contact.CustomNumber12 = &domain.NullableFloat64{Float64: customNumber12.Float64, IsNull: false}
+			}
+			if customNumber13.Valid {
+				contact.CustomNumber13 = &domain.NullableFloat64{Float64: customNumber13.Float64, IsNull: false}
+			}
+			if customNumber14.Valid {
+				contact.CustomNumber14 = &domain.NullableFloat64{Float64: customNumber14.Float64, IsNull: false}
+			}
+			if customNumber15.Valid {
+				contact.CustomNumber15 = &domain.NullableFloat64{Float64: customNumber15.Float64, IsNull: false}
+			}
 			if customDatetime1.Valid {
 				contact.CustomDatetime1 = &domain.NullableTime{Time: customDatetime1.Time, IsNull: false}
 			}
@@ -2066,6 +2139,36 @@ func (r *contactRepository) GetContactsForBroadcast(
 			}
 			if customDatetime5.Valid {
 				contact.CustomDatetime5 = &domain.NullableTime{Time: customDatetime5.Time, IsNull: false}
+			}
+			if customDatetime6.Valid {
+				contact.CustomDatetime6 = &domain.NullableTime{Time: customDatetime6.Time, IsNull: false}
+			}
+			if customDatetime7.Valid {
+				contact.CustomDatetime7 = &domain.NullableTime{Time: customDatetime7.Time, IsNull: false}
+			}
+			if customDatetime8.Valid {
+				contact.CustomDatetime8 = &domain.NullableTime{Time: customDatetime8.Time, IsNull: false}
+			}
+			if customDatetime9.Valid {
+				contact.CustomDatetime9 = &domain.NullableTime{Time: customDatetime9.Time, IsNull: false}
+			}
+			if customDatetime10.Valid {
+				contact.CustomDatetime10 = &domain.NullableTime{Time: customDatetime10.Time, IsNull: false}
+			}
+			if customDatetime11.Valid {
+				contact.CustomDatetime11 = &domain.NullableTime{Time: customDatetime11.Time, IsNull: false}
+			}
+			if customDatetime12.Valid {
+				contact.CustomDatetime12 = &domain.NullableTime{Time: customDatetime12.Time, IsNull: false}
+			}
+			if customDatetime13.Valid {
+				contact.CustomDatetime13 = &domain.NullableTime{Time: customDatetime13.Time, IsNull: false}
+			}
+			if customDatetime14.Valid {
+				contact.CustomDatetime14 = &domain.NullableTime{Time: customDatetime14.Time, IsNull: false}
+			}
+			if customDatetime15.Valid {
+				contact.CustomDatetime15 = &domain.NullableTime{Time: customDatetime15.Time, IsNull: false}
 			}
 			if customJSON1.Valid {
 				var jsonData interface{}
