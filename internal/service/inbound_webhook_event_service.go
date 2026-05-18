@@ -144,7 +144,7 @@ func (s *InboundWebhookEventService) ProcessWebhook(ctx context.Context, workspa
 				statusInfo = &reason
 			default:
 				// Skip other event types
-				return nil
+				continue
 			}
 
 			updates = append(updates, domain.MessageEventUpdate{
